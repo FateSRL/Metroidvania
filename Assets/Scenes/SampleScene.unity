@@ -3564,12 +3564,13 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 64
+  playerDetectionDistance: 8
   stunDuration: 1
   stunDirection: {x: 10, y: 12}
   counterImage: {fileID: 2035443152}
   moveSpeed: 3.5
   idleTime: 2
-  battleTime: 7
+  battleTime: 5
   attackDistance: 1.5
   attackCooldown: 0.4
   lastTimeAttacked: 0
@@ -4370,7 +4371,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 431384481
   m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingOrder: 20
   m_Sprite: {fileID: -3318188226485093758, guid: ae72133dacba6ec4eb33ecde48f50e56, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4406,6 +4407,7 @@ GameObject:
   - component: {fileID: 1514340656}
   - component: {fileID: 1514340655}
   - component: {fileID: 1514340658}
+  - component: {fileID: 1514340659}
   m_Layer: 0
   m_Name: SkillManager
   m_TagString: Untagged
@@ -4469,10 +4471,35 @@ MonoBehaviour:
   skillPrefab: {fileID: 6332326636842345063, guid: 060f553c9342ff9439720842d2efdfce, type: 3}
   launchDir: {x: 15, y: 20}
   swordGravity: 4
+  returnSpeed: 24
   numberOfDots: 0
   spaceBetweenDots: 0
   dotPrefab: {fileID: 0}
   dotsParent: {fileID: 0}
+  dotColor: {r: 1, g: 1, b: 1, a: 0.45}
+--- !u!114 &1514340659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514340654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d696988d70afac24b905d8409662e7a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldown: 5
+  blackHolePrefab: {fileID: 0}
+  maxSize: 12
+  growSpeed: 3
+  shrinkSpeed: 6
+  blackholeDuration: 3
+  damageTimes: 3
+  blackholeFxSprite: {fileID: 21300000, guid: 10ab72c7bff26aa4db1c0177bc2cecfa, type: 3}
+  blackholeFxAnimator: {fileID: 9100000, guid: a6f89291dd0147b46a97d151aaa054b1, type: 2}
+  blackholeFxOffset: {x: 0.01, y: -0.02}
+  blackholeFxScale: 0.2
 --- !u!1 &1528714778
 GameObject:
   m_ObjectHideFlags: 0

@@ -49,14 +49,34 @@ public class Entity : MonoBehaviour
 
     public virtual void Damage()
     {
-        fx.StartCoroutine("FlashFX");
-        StartCoroutine("HitKnockback");
+        Vector2 fallbackSourcePosition = (Vector2)transform.position + Vector2.right * facingDir;
+        Damage(fallbackSourcePosition);
+    }
+
+    public virtual void Damage(Transform damageSource)
+    {
+        Damage(damageSource.position);
+    }
+
+    public virtual void Damage(Vector2 damageSourcePosition)
+    {
+        if (fx != null)
+            fx.StartCoroutine("FlashFX");
+
+        StartCoroutine(HitKnockback(damageSourcePosition));
         Debug.Log(transform.name + " took damage");
     }
-    protected virtual IEnumerator HitKnockback()
+
+    protected virtual IEnumerator HitKnockback(Vector2 damageSourcePosition)
     {
         isKnocked = true;
-        rb.velocity = new Vector2(knockbackDirection.x * -facingDir, knockbackDirection.y);
+
+        float xDirection = transform.position.x >= damageSourcePosition.x ? 1 : -1;
+
+        if (Mathf.Abs(transform.position.x - damageSourcePosition.x) < .01f)
+            xDirection = -facingDir;
+
+        rb.velocity = new Vector2(knockbackDirection.x * xDirection, knockbackDirection.y);
         yield return new WaitForSeconds(knockbackDuration);
         isKnocked = false;
     }

@@ -5,6 +5,8 @@
 [Bb]uilds/
 [Ll]ogs/
 [Uu]ser[Ss]ettings/
+.dotnet-cli-home/
+Udemy course - Rpg/
 
 .vs/
 .idea/

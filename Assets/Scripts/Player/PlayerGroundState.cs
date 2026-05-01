@@ -19,9 +19,25 @@ public class PlayerGroundState : PlayerState
     {
         base.Update();
 
+        if (Input.GetKeyDown(KeyCode.R) && SkillManager.instance.blackhole != null)
+        {
+            stateMachine.ChangeState(player.blackholeState);
+            return;
+        }
+
         if(Input.GetKeyDown(KeyCode.Mouse1))
         {
-            stateMachine.ChangeState(player.aimSwordState);
+            if (player.sword == null)
+            {
+                stateMachine.ChangeState(player.aimSwordState);
+            }
+            else
+            {
+                Sword_Skill_Controller swordController = player.sword.GetComponent<Sword_Skill_Controller>();
+
+                if (swordController != null)
+                    swordController.ReturnSword();
+            }
         }
         if(Input.GetKeyDown(KeyCode.Q))
         {

@@ -22,6 +22,7 @@ public class Player : Entity
     public float dashDuration;
     public float dashDir { get; private set; }
 
+    public GameObject sword { get; private set; }
 
 
 
@@ -42,6 +43,7 @@ public class Player : Entity
     public PlayerCounterAttackState counterAttackState { get; private set; }
     public PlayerAimSwordState aimSwordState { get; private set; }
     public PlayerCatchSwordState catchSwordState { get; private set; }
+    public PlayerBlackholeState blackholeState { get; private set; }
     #endregion
 
     protected override void Awake()
@@ -59,6 +61,7 @@ public class Player : Entity
         counterAttackState = new PlayerCounterAttackState(this, stateMachine, "CounterAttack");
         aimSwordState = new PlayerAimSwordState(this, stateMachine, "AimSword");
         catchSwordState = new PlayerCatchSwordState(this, stateMachine, "CatchSword");
+        blackholeState = new PlayerBlackholeState(this, stateMachine, "Jump");
     }
     // Start is called before the first frame update
     protected override void Start()
@@ -86,6 +89,22 @@ public class Player : Entity
         isBusy = false;
     }
     public void AnimationFinishTrigger() => stateMachine.currentState.AnimationFinishTrigger();
+
+    public void AssignNewSword(GameObject _newSword)
+    {
+        sword = _newSword;
+    }
+
+    public void CatchTheSword()
+    {
+        if (sword == null)
+            return;
+
+        GameObject swordToDestroy = sword;
+        stateMachine.ChangeState(catchSwordState);
+        sword = null;
+        Destroy(swordToDestroy);
+    }
 
     private void CheckForDashInput()
     {

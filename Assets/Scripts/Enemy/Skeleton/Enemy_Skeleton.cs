@@ -36,6 +36,38 @@ public class Enemy_Skeleton : Enemy
         //     stateMachine.ChangeState(stunnedState);
         // }
     }
+
+    public override void Damage(Transform damageSource)
+    {
+        base.Damage(damageSource);
+        RefreshBattleTime(PlayerManager.instance.player.transform);
+    }
+
+    public override void Damage(Vector2 damageSourcePosition)
+    {
+        base.Damage(damageSourcePosition);
+        RefreshBattleTime(PlayerManager.instance.player.transform);
+    }
+
+    public override void TakeBlackholeDamage()
+    {
+        base.TakeBlackholeDamage();
+        RefreshBattleTime(PlayerManager.instance.player.transform);
+    }
+
+    public void RefreshBattleTime(Transform target)
+    {
+        RefreshBattleTime(target.position);
+    }
+
+    public void RefreshBattleTime(Vector2 targetPosition)
+    {
+        battleState.RefreshBattleTime(targetPosition);
+
+        if (stateMachine.currentState == idleState || stateMachine.currentState == moveState)
+            stateMachine.ChangeState(battleState);
+    }
+
     public override bool CanBeStunned()
     {
         if(base.CanBeStunned()){
