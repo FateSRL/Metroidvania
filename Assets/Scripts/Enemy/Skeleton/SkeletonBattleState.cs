@@ -45,18 +45,26 @@ public class SkeletonBattleState : EnemyState
             return;
         }
 
-        if(Vector2.Distance(lastKnownPlayerPosition, enemy.transform.position) < .2f && !playerDetected)
+        float xDistanceToTarget = lastKnownPlayerPosition.x - enemy.transform.position.x;
+
+        if (!playerDetected && Mathf.Abs(xDistanceToTarget) <= enemy.targetOverlapEpsilon)
         {
             enemy.ZeroVelocity();
             stateMachine.ChangeState(enemy.idleState);
             return;
         }
 
-        if(lastKnownPlayerPosition.x > enemy.transform.position.x)
+        if (Mathf.Abs(xDistanceToTarget) <= enemy.targetOverlapEpsilon)
+        {
+            enemy.ZeroVelocity();
+            return;
+        }
+
+        if(xDistanceToTarget > 0)
         {
             moveDir = 1;
         }
-        else if(lastKnownPlayerPosition.x < enemy.transform.position.x)
+        else
         {
             moveDir = -1;
         }

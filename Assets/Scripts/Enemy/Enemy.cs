@@ -8,6 +8,7 @@ public class Enemy : Entity
 
     [Header("Detection info")]
     [SerializeField] protected float playerDetectionDistance = 8;
+    [SerializeField] protected float playerDetectionEpsilon = .35f;
 
     [Header("Stunned info")]
     public float stunDuration;
@@ -19,6 +20,7 @@ public class Enemy : Entity
     public float moveSpeed;
     public float idleTime;
     public float battleTime;
+    public float targetOverlapEpsilon = .25f;
 
     [Header("Attack info")]
     public float attackDistance;
@@ -33,6 +35,7 @@ public class Enemy : Entity
     
 
     public EnemyStateMachine stateMachine { get; private set; } 
+    private bool isDead;
 
     protected override void Awake()
     {
@@ -60,6 +63,9 @@ public class Enemy : Entity
     protected override void Update()
     {
         base.Update();
+
+        if (isDead)
+            return;
 
         if (isFrozen)
         {
@@ -97,14 +103,48 @@ public class Enemy : Entity
 
     public virtual void TakeBlackholeDamage()
     {
+        if (stats != null && !stats.TakeDamage(1))
+            return;
+
         if (fx != null)
             fx.StartCoroutine("FlashFX");
 
         Debug.Log(transform.name + " took blackhole damage");
     }
 
+    public virtual void Die()
+    {
+        if (isDead)
+            return;
+
+        isDead = true;
+
+        if (anim != null)
+            anim.SetBool("Die", true);
+
+        if (counterImage != null)
+            counterImage.SetActive(false);
+
+        if (rb != null)
+        {
+            rb.velocity = Vector2.zero;
+            rb.angularVelocity = 0;
+            rb.gravityScale = 0;
+            rb.bodyType = RigidbodyType2D.Kinematic;
+            rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        }
+
+        Collider2D[] colliders = GetComponentsInChildren<Collider2D>();
+
+        for (int i = 0; i < colliders.Length; i++)
+            colliders[i].enabled = false;
+    }
+
     public virtual void FreezeTime(bool _timeFrozen)
     {
+        if (isDead)
+            return;
+
         isFrozen = _timeFrozen;
 
         if (_timeFrozen)
@@ -147,7 +187,8 @@ public class Enemy : Entity
             return default;
 
         int detectionMask = whatIsPlayer | whatIsGround;
-        RaycastHit2D hit = Physics2D.Raycast(wallCheck.position, Vector2.right * facingDir, playerDetectionDistance, detectionMask);
+        float detectionDistance = playerDetectionDistance + playerDetectionEpsilon;
+        RaycastHit2D hit = Physics2D.Raycast(wallCheck.position, Vector2.right * facingDir, detectionDistance, detectionMask);
 
         if (hit.collider == null)
             return default;
@@ -168,6 +209,14 @@ public class Enemy : Entity
         {
             Gizmos.color = Color.red;
             Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + playerDetectionDistance * facingDir, wallCheck.position.y));
+
+            if (playerDetectionEpsilon > 0)
+            {
+                Gizmos.color = Color.magenta;
+                Gizmos.DrawLine(
+                    new Vector3(wallCheck.position.x + playerDetectionDistance * facingDir, wallCheck.position.y),
+                    new Vector3(wallCheck.position.x + (playerDetectionDistance + playerDetectionEpsilon) * facingDir, wallCheck.position.y));
+            }
         }
     }
 }

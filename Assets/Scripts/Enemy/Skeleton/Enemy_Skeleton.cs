@@ -62,6 +62,9 @@ public class Enemy_Skeleton : Enemy
 
     public void RefreshBattleTime(Vector2 targetPosition)
     {
+        if (stats != null && stats.isDead)
+            return;
+
         battleState.RefreshBattleTime(targetPosition);
 
         if (stateMachine.currentState == idleState || stateMachine.currentState == moveState)

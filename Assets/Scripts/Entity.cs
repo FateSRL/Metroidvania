@@ -8,6 +8,7 @@ public class Entity : MonoBehaviour
     public Animator anim { get; private set; }
     public Rigidbody2D rb { get; private set; }
     public EntityFX fx { get; private set; }
+    public CharacterStats stats { get; private set; }
     #endregion
 
 
@@ -36,6 +37,7 @@ public class Entity : MonoBehaviour
         fx = GetComponentInChildren<EntityFX>();
         anim = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        stats = GetComponent<CharacterStats>();
     }
 
     protected virtual void Awake()
@@ -55,15 +57,31 @@ public class Entity : MonoBehaviour
 
     public virtual void Damage(Transform damageSource)
     {
-        Damage(damageSource.position);
+        CharacterStats damageSourceStats = damageSource.GetComponent<CharacterStats>();
+
+        if (damageSourceStats == null)
+            damageSourceStats = damageSource.GetComponentInParent<CharacterStats>();
+
+        int damageAmount = damageSourceStats != null ? damageSourceStats.GetDamage() : 1;
+        Damage(damageSource.position, damageAmount);
     }
 
     public virtual void Damage(Vector2 damageSourcePosition)
     {
+        Damage(damageSourcePosition, 1);
+    }
+
+    public virtual void Damage(Vector2 damageSourcePosition, int damageAmount)
+    {
+        if (stats != null && !stats.TakeDamage(damageAmount))
+            return;
+
         if (fx != null)
             fx.StartCoroutine("FlashFX");
 
-        StartCoroutine(HitKnockback(damageSourcePosition));
+        if (rb != null && (stats == null || !stats.isDead))
+            StartCoroutine(HitKnockback(damageSourcePosition));
+
         Debug.Log(transform.name + " took damage");
     }
 

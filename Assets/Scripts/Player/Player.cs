@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : Entity
 {
@@ -11,6 +12,7 @@ public class Player : Entity
 
 
     public bool isBusy { get; private set; }
+    private bool isDead;
     [Header("Move info")]
     public float moveSpeed;
     public float jumpForce;
@@ -76,6 +78,10 @@ public class Player : Entity
     protected override void Update()
     {
         base.Update();
+
+        if (isDead)
+            return;
+
         stateMachine.currentState.Update();
         CheckForDashInput();
         StartCoroutine("BusyFor", .1f);
@@ -89,6 +95,31 @@ public class Player : Entity
         isBusy = false;
     }
     public void AnimationFinishTrigger() => stateMachine.currentState.AnimationFinishTrigger();
+
+    public void Die()
+    {
+        if (isDead)
+            return;
+
+        isDead = true;
+
+        if (anim != null)
+            anim.SetBool("Die", true);
+
+        if (rb != null)
+        {
+            rb.velocity = Vector2.zero;
+            rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        }
+
+        StartCoroutine(RestartSceneCoroutine());
+    }
+
+    private IEnumerator RestartSceneCoroutine()
+    {
+        yield return new WaitForSeconds(1.2f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 
     public void AssignNewSword(GameObject _newSword)
     {
