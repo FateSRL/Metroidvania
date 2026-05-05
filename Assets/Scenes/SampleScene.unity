@@ -4221,7 +4221,7 @@ MonoBehaviour:
   battleTime: 5
   targetOverlapEpsilon: 0.25
   attackDistance: 1.5
-  attackCooldown: 0.4
+  attackCooldown: 1.4
   lastTimeAttacked: 0
 --- !u!4 &470934203
 Transform:
@@ -6053,6 +6053,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04ab7d00d46421a47af38d2718768630, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitImpactPrefab: {fileID: 8840653934548335091, guid: 3d00efcb79b69f7428f7f4d37f69faf3, type: 3}
+  hitImpactOffset: {x: 0, y: 0.75}
 --- !u!1 &1460758585
 GameObject:
   m_ObjectHideFlags: 0
@@ -6901,7 +6903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c28ee53757986874fa9f5e4598860496, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
+  maxHealth: 100
   damage: 1
   invincibilityDuration: 1
 --- !u!1 &1804856404
@@ -7714,6 +7716,34 @@ PrefabInstance:
     - target: {fileID: 8201715435975737471, guid: 9b32aab209618524f92f561f746a4659, type: 3}
       propertyPath: teleportSearchAttempts
       value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201715435975737471, guid: 9b32aab209618524f92f561f746a4659, type: 3}
+      propertyPath: phaseTwoTransitionFireWidth
+      value: 1.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201715435975737471, guid: 9b32aab209618524f92f561f746a4659, type: 3}
+      propertyPath: phaseTwoTransitionLaserLength
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201715435975737471, guid: 9b32aab209618524f92f561f746a4659, type: 3}
+      propertyPath: phaseTwoTransitionWarningWidth
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201715435975737471, guid: 9b32aab209618524f92f561f746a4659, type: 3}
+      propertyPath: phaseTwoTransitionLaserFireTime
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201715435975737471, guid: 9b32aab209618524f92f561f746a4659, type: 3}
+      propertyPath: phaseTwoTransitionLaserInterval
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201715435975737471, guid: 9b32aab209618524f92f561f746a4659, type: 3}
+      propertyPath: phaseTwoTransitionLaserOffset.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201715435975737471, guid: 9b32aab209618524f92f561f746a4659, type: 3}
+      propertyPath: phaseTwoTransitionLaserOffset.y
+      value: 6.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

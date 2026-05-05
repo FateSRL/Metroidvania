@@ -12,6 +12,7 @@ public class Player : Entity
 
     public bool isBusy { get; private set; }
     private bool isDead;
+    private float actionInputBlockedUntil;
     [Header("Move info")]
     public float moveSpeed;
     public float jumpForce;
@@ -78,7 +79,7 @@ public class Player : Entity
     {
         base.Update();
 
-        if (isDead)
+        if (isDead || Time.timeScale == 0)
             return;
 
         stateMachine.currentState.Update();
@@ -95,12 +96,23 @@ public class Player : Entity
     }
     public void AnimationFinishTrigger() => stateMachine.currentState.AnimationFinishTrigger();
 
+    public void BlockActionInputFor(float seconds)
+    {
+        actionInputBlockedUntil = Mathf.Max(actionInputBlockedUntil, Time.unscaledTime + seconds);
+    }
+
+    public bool IsActionInputBlocked()
+    {
+        return Time.unscaledTime < actionInputBlockedUntil;
+    }
+
     public void Die()
     {
         if (isDead)
             return;
 
         isDead = true;
+        AudioManager.PlaySFX(SfxType.PlayerDeath, .85f);
 
         if (anim != null)
             anim.SetBool("Die", true);
@@ -125,11 +137,15 @@ public class Player : Entity
         GameObject swordToDestroy = sword;
         stateMachine.ChangeState(catchSwordState);
         sword = null;
+        AudioManager.PlaySFX(SfxType.SwordCatch, .65f);
         Destroy(swordToDestroy);
     }
 
     private void CheckForDashInput()
     {
+        if (IsActionInputBlocked())
+            return;
+
         if (IsWallDetected())
         {
             return;

@@ -19,6 +19,15 @@ public class PlayerGroundState : PlayerState
     {
         base.Update();
 
+        if (!player.IsGroundDetected())
+        {
+            stateMachine.ChangeState(player.airState);
+            return;
+        }
+
+        if (player.IsActionInputBlocked())
+            return;
+
         if (Input.GetKeyDown(KeyCode.R) && SkillManager.instance.blackhole != null)
         {
             stateMachine.ChangeState(player.blackholeState);
@@ -46,10 +55,6 @@ public class PlayerGroundState : PlayerState
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             stateMachine.ChangeState(player.primaryAttackState);
-        }
-        if (!player.IsGroundDetected())
-        {
-            stateMachine.ChangeState(player.airState);
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && player.IsGroundDetected())

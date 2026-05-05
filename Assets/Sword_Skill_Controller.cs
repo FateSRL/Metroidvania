@@ -14,7 +14,7 @@ public class Sword_Skill_Controller : MonoBehaviour
     private bool hasHitEnemy;
     private float returnSpeed = 12;
 
-    [SerializeField] private float stickIntoOffset = .35f;
+    [SerializeField] private float stickIntoOffset = .18f;
 
     private void Awake()
     {
@@ -110,20 +110,32 @@ public class Sword_Skill_Controller : MonoBehaviour
         if (isReturning)
             return;
 
-        Enemy enemy = collision.GetComponent<Enemy>();
+        if (collision.GetComponentInParent<Player>() != null)
+            return;
 
-        if (enemy != null && !hasHitEnemy)
+        Enemy enemy = collision.GetComponentInParent<Enemy>();
+
+        if (enemy != null)
         {
-            hasHitEnemy = true;
-            enemy.Damage(transform);
+            if (!hasHitEnemy)
+            {
+                hasHitEnemy = true;
+                enemy.Damage(transform);
+                StickInto(collision, enemy.transform);
+            }
+
+            return;
         }
 
-        StickInto(collision);
+        if (collision.isTrigger)
+            return;
+
+        StickInto(collision, collision.transform);
     }
 
-    private void StickInto(Collider2D collision)
+    private void StickInto(Collider2D collision, Transform targetParent)
     {
-        if (collision.GetComponent<Player>() != null)
+        if (collision.GetComponentInParent<Player>() != null)
             return;
 
         canRotate = false;
@@ -141,7 +153,7 @@ public class Sword_Skill_Controller : MonoBehaviour
             rb.constraints = RigidbodyConstraints2D.FreezeAll;
         }
 
-        transform.parent = collision.transform;
+        transform.parent = targetParent != null ? targetParent : collision.transform;
     }
 
     private void SetRotationAnimation(bool value)

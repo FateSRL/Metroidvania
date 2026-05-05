@@ -6,6 +6,7 @@ public class Enemy_DeathBringer : Enemy
     public DeathBringerBattleState battleState { get; private set; }
     public DeathBringerAttackState attackState { get; private set; }
     public DeathBringerSpellCastState spellCastState { get; private set; }
+    public DeathBringerPhaseTransitionState phaseTransitionState { get; private set; }
     public DeathBringerTeleportState teleportState { get; private set; }
     public DeathBringerDeadState deadState { get; private set; }
 
@@ -15,7 +16,23 @@ public class Enemy_DeathBringer : Enemy
     [Header("Phase two")]
     [SerializeField] private float phaseTwoHealthPercent = .5f;
     [SerializeField] private float phaseTwoMoveSpeedBonus = .7f;
-    [SerializeField] private float phaseTwoAttackCooldownMultiplier = .75f;
+    [SerializeField] private float phaseTwoAttackCooldownMultiplier = .85f;
+    [SerializeField] private int phaseTwoTransitionLaserCount = 4;
+    [SerializeField] private float phaseTwoTransitionStartDelay = .25f;
+    [SerializeField] private float phaseTwoTransitionLaserInterval = .55f;
+    [SerializeField] private float phaseTwoTransitionLaserWarningTime = .85f;
+    [SerializeField] private float phaseTwoTransitionLaserFireTime = .22f;
+    [SerializeField] private float phaseTwoTransitionLaserLength = 16f;
+    [SerializeField] private float phaseTwoTransitionWarningWidth = .06f;
+    [SerializeField] private float phaseTwoTransitionFireWidth = .24f;
+    [SerializeField] private int phaseTwoTransitionLaserDamage = 1;
+    [SerializeField] private Vector2 phaseTwoTransitionLaserOffset = new Vector2(5.5f, 5.2f);
+    [SerializeField] private Vector2 phaseTwoTransitionTargetOffset = new Vector2(0, .55f);
+
+    [Header("Attack rhythm")]
+    [SerializeField] private float minAttackCooldown = 1.2f;
+    [SerializeField] private float maxAttackCooldown = 1.8f;
+    [SerializeField] private float chaseBeforeAttackReadyTime = .45f;
 
     [Header("Spell cast")]
     [SerializeField] private GameObject spellPrefab;
@@ -39,13 +56,18 @@ public class Enemy_DeathBringer : Enemy
     public bool phaseTwoActive { get; private set; }
     public int AmountOfSpells => phaseTwoActive ? amountOfSpells + 1 : amountOfSpells;
     public float SpellCooldown => phaseTwoActive ? spellCooldown * .8f : spellCooldown;
+    public int PhaseTwoTransitionLaserCount => phaseTwoTransitionLaserCount;
+    public float PhaseTwoTransitionStartDelay => phaseTwoTransitionStartDelay;
+    public float PhaseTwoTransitionLaserInterval => phaseTwoTransitionLaserInterval;
+    public float PhaseTwoTransitionLaserWarningTime => phaseTwoTransitionLaserWarningTime;
+    public float PhaseTwoTransitionLaserFireTime => phaseTwoTransitionLaserFireTime;
 
     private Transform player;
     private bool isBossDead;
+    private bool phaseTwoTransitionStarted;
     private float lastTimeCast = -999f;
     private float lastTimeTeleported = -999f;
     private float chanceToTeleport;
-    private float defaultAttackCooldown;
     private Bounds fallbackTeleportBounds;
 
     protected override void Awake()
@@ -58,6 +80,7 @@ public class Enemy_DeathBringer : Enemy
         battleState = new DeathBringerBattleState(this, stateMachine, "Move", this);
         attackState = new DeathBringerAttackState(this, stateMachine, "Attack", this);
         spellCastState = new DeathBringerSpellCastState(this, stateMachine, "SpellCast", this);
+        phaseTransitionState = new DeathBringerPhaseTransitionState(this, stateMachine, "SpellCast", this);
         teleportState = new DeathBringerTeleportState(this, stateMachine, "Teleport", this);
         deadState = new DeathBringerDeadState(this, stateMachine, "Idle", this);
     }
@@ -69,7 +92,7 @@ public class Enemy_DeathBringer : Enemy
         if (PlayerManager.instance != null && PlayerManager.instance.player != null)
             player = PlayerManager.instance.player.transform;
 
-        defaultAttackCooldown = attackCooldown;
+        RollNextAttackCooldown();
         lastTimeAttacked = -attackCooldown;
         chanceToTeleport = defaultChanceToTeleport;
         fallbackTeleportBounds = new Bounds(transform.position + new Vector3(-3f, 2.5f, 0), new Vector3(18f, 8f, 0));
@@ -108,10 +131,38 @@ public class Enemy_DeathBringer : Enemy
         if (player == null)
             return;
 
-        if (player.position.x > transform.position.x && facingDir == -1)
+        float xDistanceToPlayer = player.position.x - transform.position.x;
+        if (Mathf.Abs(xDistanceToPlayer) <= targetOverlapEpsilon)
+            return;
+
+        if (xDistanceToPlayer > 0 && facingDir == -1)
             Flip();
-        else if (player.position.x < transform.position.x && facingDir == 1)
+        else if (xDistanceToPlayer < 0 && facingDir == 1)
             Flip();
+    }
+
+    public bool IsPlayerInAttackRange()
+    {
+        return player != null && Vector2.Distance(player.position, transform.position) <= attackDistance;
+    }
+
+    public bool TryStartAttack()
+    {
+        if (Time.time < lastTimeAttacked + attackCooldown)
+            return false;
+
+        RollNextAttackCooldown();
+        return true;
+    }
+
+    public bool ShouldChasePlayer()
+    {
+        return GetAttackCooldownRemaining() <= chaseBeforeAttackReadyTime;
+    }
+
+    public float GetAttackCooldownRemaining()
+    {
+        return Mathf.Max(0, lastTimeAttacked + attackCooldown - Time.time);
     }
 
     public bool CanDoSpellCast()
@@ -155,9 +206,58 @@ public class Enemy_DeathBringer : Enemy
 
         Vector3 spellPosition = new Vector3(player.position.x + xOffset, player.position.y + spellOffset.y, 0);
         GameObject newSpell = Instantiate(spellPrefab, spellPosition, Quaternion.identity);
+        AudioManager.PlaySFX(SfxType.BossSpell, .8f);
 
         if (newSpell.TryGetComponent(out DeathBringerSpell_Controller spell))
             spell.SetupSpell(stats);
+    }
+
+    public void BeginPhaseTwoTransition()
+    {
+        ZeroVelocity();
+        FacePlayer();
+
+        if (stats != null)
+            stats.MakeInvincible(true);
+    }
+
+    public void SpawnPhaseTwoTransitionLaser(int index)
+    {
+        if (player == null)
+            return;
+
+        int side = index % 2 == 0 ? -1 : 1;
+        float extraHeight = (index / 2) * .45f;
+        Vector2 startPosition = (Vector2)player.position + new Vector2(phaseTwoTransitionLaserOffset.x * side, phaseTwoTransitionLaserOffset.y + extraHeight);
+
+        GameObject laserObject = new GameObject("DeathBringerPhaseLaser");
+        DeathBringerPhaseLaser laser = laserObject.AddComponent<DeathBringerPhaseLaser>();
+        laser.Setup(
+            startPosition,
+            player,
+            phaseTwoTransitionTargetOffset,
+            phaseTwoTransitionLaserLength,
+            phaseTwoTransitionLaserWarningTime,
+            phaseTwoTransitionLaserFireTime,
+            phaseTwoTransitionWarningWidth,
+            phaseTwoTransitionFireWidth,
+            phaseTwoTransitionLaserDamage,
+            whatIsPlayer,
+            stats);
+    }
+
+    public void ActivatePhaseTwo()
+    {
+        if (phaseTwoActive)
+            return;
+
+        phaseTwoActive = true;
+        moveSpeed += phaseTwoMoveSpeedBonus;
+        RollNextAttackCooldown();
+        lastTimeCast = Time.time;
+
+        if (stats != null)
+            stats.MakeInvincible(false);
     }
 
     public void TeleportNearPlayer()
@@ -278,12 +378,21 @@ public class Enemy_DeathBringer : Enemy
         anim.Play("deathBringerExit", 0, 0);
     }
 
+    public void RollNextAttackCooldown()
+    {
+        float multiplier = phaseTwoActive ? phaseTwoAttackCooldownMultiplier : 1f;
+        float minCooldown = Mathf.Max(.2f, minAttackCooldown * multiplier);
+        float maxCooldown = Mathf.Max(minCooldown, maxAttackCooldown * multiplier);
+        attackCooldown = Random.Range(minCooldown, maxCooldown);
+    }
+
     public override void Die()
     {
         if (isBossDead)
             return;
 
         isBossDead = true;
+        AudioManager.PlaySFX(SfxType.BossDeath, .9f);
 
         stateMachine.ChangeState(deadState);
 
@@ -314,14 +423,13 @@ public class Enemy_DeathBringer : Enemy
 
     private void CheckPhaseTwo()
     {
-        if (phaseTwoActive || stats == null)
+        if (phaseTwoActive || phaseTwoTransitionStarted || stats == null)
             return;
 
         if (stats.currentHealth > stats.GetMaxHealthValue() * phaseTwoHealthPercent)
             return;
 
-        phaseTwoActive = true;
-        moveSpeed += phaseTwoMoveSpeedBonus;
-        attackCooldown = Mathf.Max(.2f, defaultAttackCooldown * phaseTwoAttackCooldownMultiplier);
+        phaseTwoTransitionStarted = true;
+        stateMachine.ChangeState(phaseTransitionState);
     }
 }

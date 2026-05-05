@@ -39,6 +39,8 @@ public class DeathBringerBattleState : EnemyState
 
             if (CanAttack())
                 stateMachine.ChangeState(enemy.attackState);
+            else
+                stateMachine.ChangeState(enemy.idleState);
 
             return;
         }
@@ -49,9 +51,17 @@ public class DeathBringerBattleState : EnemyState
             return;
         }
 
+        if (!enemy.ShouldChasePlayer())
+        {
+            enemy.ZeroVelocity();
+            stateMachine.ChangeState(enemy.idleState);
+            return;
+        }
+
         if (Mathf.Abs(xDistanceToPlayer) <= enemy.targetOverlapEpsilon)
         {
             enemy.ZeroVelocity();
+            stateMachine.ChangeState(enemy.idleState);
             return;
         }
 
@@ -61,6 +71,6 @@ public class DeathBringerBattleState : EnemyState
 
     private bool CanAttack()
     {
-        return Time.time >= enemy.lastTimeAttacked + enemy.attackCooldown;
+        return enemy.TryStartAttack();
     }
 }

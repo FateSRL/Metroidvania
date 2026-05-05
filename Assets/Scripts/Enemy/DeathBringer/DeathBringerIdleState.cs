@@ -29,6 +29,23 @@ public class DeathBringerIdleState : EnemyState
             return;
         }
 
+        if (enemy.IsPlayerInAttackRange())
+        {
+            if (enemy.TryStartAttack())
+                stateMachine.ChangeState(enemy.attackState);
+
+            return;
+        }
+
+        if (enemy.CanDoSpellCast())
+        {
+            stateMachine.ChangeState(enemy.spellCastState);
+            return;
+        }
+
+        if (!enemy.ShouldChasePlayer())
+            return;
+
         if (stateTimer <= 0)
             stateMachine.ChangeState(enemy.battleState);
     }

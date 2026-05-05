@@ -17,6 +17,7 @@ public class UI_BossClearMessage : MonoBehaviour
     [Header("Player")]
     [SerializeField] private CharacterStats playerStats;
     [SerializeField] private float playerDeathMenuDelay = 1f;
+    [SerializeField] private float menuInputBlockDuration = .2f;
 
     [Header("Start menu")]
     [SerializeField] private GameObject startMenuRoot;
@@ -27,6 +28,8 @@ public class UI_BossClearMessage : MonoBehaviour
 
     [Header("Pause / clear menu")]
     [SerializeField] private GameObject messageRoot;
+    [SerializeField] private GameObject bossClearBackgroundRoot;
+    [SerializeField] private Sprite bossClearBackgroundSprite;
     [SerializeField] private Text messageText;
     [SerializeField] private string pauseMessage = "\u6e38\u620f\u6682\u505c";
     [SerializeField] private string clearMessage = "BOSS \u5df2\u51fb\u8d25";
@@ -154,6 +157,7 @@ public class UI_BossClearMessage : MonoBehaviour
         Transform canvasTransform = GetCanvasTransform();
 
         EnsureStartMenu(canvasTransform);
+        EnsureBossClearBackground(canvasTransform);
         EnsurePauseMenu(canvasTransform);
 
         if (!Application.isPlaying)
@@ -164,6 +168,9 @@ public class UI_BossClearMessage : MonoBehaviour
 
         if (messageRoot != null && !pauseMenuOpen && !bossDefeated && !playerDefeated)
             messageRoot.SetActive(false);
+
+        if (bossClearBackgroundRoot != null && !bossDefeated)
+            bossClearBackgroundRoot.SetActive(false);
     }
 
     private Transform GetCanvasTransform()
@@ -206,6 +213,49 @@ public class UI_BossClearMessage : MonoBehaviour
 
         startButton = EnsureButton(startButton, startMenuRoot.transform, "StartButton", new Vector2(0, -30), "\u5f00\u59cb\u6e38\u620f", StartGame);
         startQuitButton = EnsureButton(startQuitButton, startMenuRoot.transform, "QuitButton", new Vector2(0, -88), "\u9000\u51fa\u6e38\u620f", QuitGame);
+    }
+
+    private void EnsureBossClearBackground(Transform canvasTransform)
+    {
+        if (bossClearBackgroundRoot == null)
+        {
+            Transform existing = canvasTransform.Find("BossClearBackground");
+            if (existing != null)
+                bossClearBackgroundRoot = existing.gameObject;
+        }
+
+        if (bossClearBackgroundRoot == null)
+        {
+            bossClearBackgroundRoot = new GameObject("BossClearBackground", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image));
+            bossClearBackgroundRoot.transform.SetParent(canvasTransform, false);
+        }
+
+        RectTransform rootRect = bossClearBackgroundRoot.GetComponent<RectTransform>();
+        StretchToFullScreen(rootRect);
+
+        Image image = bossClearBackgroundRoot.GetComponent<Image>();
+        Sprite backgroundSprite = bossClearBackgroundSprite != null ? bossClearBackgroundSprite : startBackgroundSprite;
+        image.sprite = backgroundSprite;
+        image.color = backgroundSprite != null ? Color.white : new Color(.015f, .018f, .03f, 1);
+        image.type = Image.Type.Simple;
+        image.preserveAspect = false;
+        image.raycastTarget = false;
+
+        EnsureBossClearBackgroundShade(bossClearBackgroundRoot.transform);
+    }
+
+    private void EnsureBossClearBackgroundShade(Transform parent)
+    {
+        Transform existing = parent.Find("VictoryShade");
+        GameObject shadeObject = existing != null ? existing.gameObject : new GameObject("VictoryShade", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image));
+        shadeObject.transform.SetParent(parent, false);
+
+        RectTransform shadeRect = shadeObject.GetComponent<RectTransform>();
+        StretchToFullScreen(shadeRect);
+
+        Image image = shadeObject.GetComponent<Image>();
+        image.color = new Color(0, 0, 0, .38f);
+        image.raycastTarget = false;
     }
 
     private Image EnsureStartBackground(Transform parent)
@@ -368,7 +418,13 @@ public class UI_BossClearMessage : MonoBehaviour
         text.raycastTarget = false;
 
         button.onClick.RemoveAllListeners();
-        button.onClick.AddListener(action);
+        button.onClick.AddListener(() =>
+        {
+            AudioManager.PlaySFX(SfxType.MenuClick, .65f);
+
+            if (action != null)
+                action.Invoke();
+        });
         return button;
     }
 
@@ -497,6 +553,9 @@ public class UI_BossClearMessage : MonoBehaviour
         if (startMenuRoot != null)
             startMenuRoot.SetActive(true);
 
+        if (bossClearBackgroundRoot != null)
+            bossClearBackgroundRoot.SetActive(false);
+
         if (messageRoot != null)
             messageRoot.SetActive(false);
     }
@@ -506,9 +565,13 @@ public class UI_BossClearMessage : MonoBehaviour
         gameStarted = true;
         pauseMenuOpen = false;
         Time.timeScale = 1;
+        BlockPlayerActionInput();
 
         if (startMenuRoot != null)
             startMenuRoot.SetActive(false);
+
+        if (bossClearBackgroundRoot != null)
+            bossClearBackgroundRoot.SetActive(false);
 
         if (messageRoot != null)
             messageRoot.SetActive(false);
@@ -525,11 +588,17 @@ public class UI_BossClearMessage : MonoBehaviour
         if (messageText != null)
             messageText.text = pauseMessage;
 
+        if (bossClearBackgroundRoot != null)
+            bossClearBackgroundRoot.SetActive(false);
+
         if (resumeButton != null)
             resumeButton.gameObject.SetActive(true);
 
         if (messageRoot != null)
+        {
             messageRoot.SetActive(true);
+            BringMessageLayerToFront();
+        }
     }
 
     private void ResumeGame()
@@ -539,9 +608,13 @@ public class UI_BossClearMessage : MonoBehaviour
 
         pauseMenuOpen = false;
         Time.timeScale = 1;
+        BlockPlayerActionInput();
 
         if (messageRoot != null)
             messageRoot.SetActive(false);
+
+        if (bossClearBackgroundRoot != null)
+            bossClearBackgroundRoot.SetActive(false);
     }
 
     private void ShowBossClearMenu()
@@ -560,8 +633,17 @@ public class UI_BossClearMessage : MonoBehaviour
         if (resumeButton != null)
             resumeButton.gameObject.SetActive(false);
 
+        if (bossClearBackgroundRoot != null)
+        {
+            bossClearBackgroundRoot.SetActive(true);
+            bossClearBackgroundRoot.transform.SetAsLastSibling();
+        }
+
         if (messageRoot != null)
+        {
             messageRoot.SetActive(true);
+            BringMessageLayerToFront();
+        }
     }
 
     private void ShowPlayerDeathMenu()
@@ -577,11 +659,41 @@ public class UI_BossClearMessage : MonoBehaviour
         if (messageText != null)
             messageText.text = deathMessage;
 
+        if (bossClearBackgroundRoot != null)
+            bossClearBackgroundRoot.SetActive(false);
+
         if (resumeButton != null)
             resumeButton.gameObject.SetActive(false);
 
         if (messageRoot != null)
+        {
             messageRoot.SetActive(true);
+            BringMessageLayerToFront();
+        }
+    }
+
+    private void BringMessageLayerToFront()
+    {
+        if (messageRoot == null)
+            return;
+
+        Transform messageLayer = messageRoot.transform.parent != null ? messageRoot.transform.parent : messageRoot.transform;
+        messageLayer.SetAsLastSibling();
+        messageRoot.transform.SetAsLastSibling();
+    }
+
+    private void BlockPlayerActionInput()
+    {
+        Player player = null;
+
+        if (PlayerManager.instance != null)
+            player = PlayerManager.instance.player;
+
+        if (player == null)
+            player = FindObjectOfType<Player>();
+
+        if (player != null)
+            player.BlockActionInputFor(menuInputBlockDuration);
     }
 
     public void RestartGame()

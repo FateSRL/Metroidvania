@@ -15,6 +15,8 @@ public class Enemy_DeathBringerAnimationTriggers : MonoBehaviour
         if (enemy == null || enemy.attackCheck == null)
             return;
 
+        AudioManager.PlaySFX(SfxType.BossAttack, .75f);
+
         Collider2D[] colliders = Physics2D.OverlapCircleAll(enemy.attackCheck.position, enemy.attackCheckRadius);
         foreach (var hit in colliders)
         {

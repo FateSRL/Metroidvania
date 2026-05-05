@@ -79,10 +79,20 @@ public class Entity : MonoBehaviour
         if (fx != null)
             fx.StartCoroutine("FlashFX");
 
+        PlayDamageSfx();
+
         if (rb != null && (stats == null || !stats.isDead))
             StartCoroutine(HitKnockback(damageSourcePosition));
 
         Debug.Log(transform.name + " took damage");
+    }
+
+    private void PlayDamageSfx()
+    {
+        if (GetComponent<Player>() != null)
+            AudioManager.PlaySFX(SfxType.PlayerHit, .85f);
+        else
+            AudioManager.PlaySFX(SfxType.EnemyHit, .55f);
     }
 
     protected virtual IEnumerator HitKnockback(Vector2 damageSourcePosition)

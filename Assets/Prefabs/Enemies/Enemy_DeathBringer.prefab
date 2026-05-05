@@ -178,12 +178,23 @@ MonoBehaviour:
   battleTime: 7
   targetOverlapEpsilon: 1
   attackDistance: 1.8
-  attackCooldown: 1
+  attackCooldown: 1.4
   lastTimeAttacked: 0
   bossFightDistance: 5.5
   phaseTwoHealthPercent: 0.5
   phaseTwoMoveSpeedBonus: 0.7
-  phaseTwoAttackCooldownMultiplier: 0.75
+  phaseTwoAttackCooldownMultiplier: 0.85
+  phaseTwoTransitionLaserCount: 4
+  phaseTwoTransitionStartDelay: 0.25
+  phaseTwoTransitionLaserInterval: 0.7
+  phaseTwoTransitionLaserWarningTime: 0.85
+  phaseTwoTransitionLaserFireTime: 0.32
+  phaseTwoTransitionLaserLength: 70
+  phaseTwoTransitionWarningWidth: 0.07
+  phaseTwoTransitionFireWidth: 1.35
+  phaseTwoTransitionLaserDamage: 1
+  phaseTwoTransitionLaserOffset: {x: 10, y: 6.2}
+  phaseTwoTransitionTargetOffset: {x: 0, y: 0.55}
   spellPrefab: {fileID: 5207230700496580544, guid: 27d7cb36f5d726d40b89194bc4ed175a, type: 3}
   spellOffset: {x: 1.5, y: 0.8}
   amountOfSpells: 2
@@ -320,7 +331,7 @@ SpriteRenderer:
   m_SortingLayerID: 431384481
   m_SortingLayer: 4
   m_SortingOrder: 18
-  m_Sprite: {fileID: -1884892108, guid: 0e4e9e307a6097a4cbd21f66b7bdf986, type: 3}
+  m_Sprite: {fileID: -686164639, guid: 0e4e9e307a6097a4cbd21f66b7bdf986, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

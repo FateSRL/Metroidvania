@@ -109,6 +109,8 @@ public class Enemy : Entity
         if (fx != null)
             fx.StartCoroutine("FlashFX");
 
+        AudioManager.PlaySFX(SfxType.EnemyHit, .45f);
+
         Debug.Log(transform.name + " took blackhole damage");
     }
 
@@ -118,6 +120,7 @@ public class Enemy : Entity
             return;
 
         isDead = true;
+        AudioManager.PlaySFX(SfxType.EnemyDeath, .7f);
 
         if (anim != null)
             anim.SetBool("Die", true);
