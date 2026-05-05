@@ -70,6 +70,7 @@ public class Enemy_DeathBringer : Enemy
             player = PlayerManager.instance.player.transform;
 
         defaultAttackCooldown = attackCooldown;
+        lastTimeAttacked = -attackCooldown;
         chanceToTeleport = defaultChanceToTeleport;
         fallbackTeleportBounds = new Bounds(transform.position + new Vector3(-3f, 2.5f, 0), new Vector3(18f, 8f, 0));
         FacePlayer();

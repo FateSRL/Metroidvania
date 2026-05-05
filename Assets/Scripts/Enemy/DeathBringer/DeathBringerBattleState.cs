@@ -33,15 +33,19 @@ public class DeathBringerBattleState : EnemyState
         float xDistanceToPlayer = player.position.x - enemy.transform.position.x;
         float distanceToPlayer = Vector2.Distance(player.position, enemy.transform.position);
 
-        if (enemy.CanDoSpellCast())
+        if (distanceToPlayer <= enemy.attackDistance)
         {
-            stateMachine.ChangeState(enemy.spellCastState);
+            enemy.ZeroVelocity();
+
+            if (CanAttack())
+                stateMachine.ChangeState(enemy.attackState);
+
             return;
         }
 
-        if (distanceToPlayer <= enemy.attackDistance && CanAttack())
+        if (enemy.CanDoSpellCast())
         {
-            stateMachine.ChangeState(enemy.attackState);
+            stateMachine.ChangeState(enemy.spellCastState);
             return;
         }
 

@@ -10,6 +10,7 @@ public class DeathBringerIdleState : EnemyState
     public override void Enter()
     {
         base.Enter();
+        stateTimer = enemy.idleTime;
         enemy.ZeroVelocity();
     }
 
@@ -20,7 +21,15 @@ public class DeathBringerIdleState : EnemyState
         enemy.ZeroVelocity();
         enemy.FacePlayer();
 
-        if (enemy.ShouldStartBossFight())
+        if (!enemy.bossFightBegun)
+        {
+            if (enemy.ShouldStartBossFight())
+                stateMachine.ChangeState(enemy.battleState);
+
+            return;
+        }
+
+        if (stateTimer <= 0)
             stateMachine.ChangeState(enemy.battleState);
     }
 }

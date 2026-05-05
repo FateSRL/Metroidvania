@@ -168,7 +168,7 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 64
-  playerDetectionDistance: 12
+  playerDetectionDistance: 6
   playerDetectionEpsilon: 0.5
   stunDuration: 0
   stunDirection: {x: 0, y: 0}
@@ -177,10 +177,10 @@ MonoBehaviour:
   idleTime: 0.6
   battleTime: 7
   targetOverlapEpsilon: 1
-  attackDistance: 4
-  attackCooldown: 1.5
+  attackDistance: 1.8
+  attackCooldown: 1
   lastTimeAttacked: 0
-  bossFightDistance: 9
+  bossFightDistance: 5.5
   phaseTwoHealthPercent: 0.5
   phaseTwoMoveSpeedBonus: 0.7
   phaseTwoAttackCooldownMultiplier: 0.75

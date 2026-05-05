@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Player : Entity
 {
@@ -111,14 +110,6 @@ public class Player : Entity
             rb.velocity = Vector2.zero;
             rb.constraints = RigidbodyConstraints2D.FreezeAll;
         }
-
-        StartCoroutine(RestartSceneCoroutine());
-    }
-
-    private IEnumerator RestartSceneCoroutine()
-    {
-        yield return new WaitForSeconds(1.2f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void AssignNewSword(GameObject _newSword)
