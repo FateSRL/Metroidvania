@@ -142,5 +142,11 @@ public class Entity : MonoBehaviour
             Flip();
         }
     }
+
+    public virtual void SetupDefaultFacingDir(int direction)
+    {
+        facingDir = direction >= 0 ? 1 : -1;
+        facingRight = facingDir == 1;
+    }
     #endregion
 }

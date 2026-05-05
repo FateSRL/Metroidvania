@@ -1,0 +1,14 @@
+{
+  "fileOptions": {
+    "systemExcludeSearchPatterns": [
+      "**/Library/**",
+      "**/Temp/**",
+      "**/Obj/**",
+      "**/Build/**",
+      "**/Builds/**",
+      "**/Logs/**",
+      "**/UserSettings/**",
+      "**/Udemy course - Rpg/**"
+    ]
+  }
+}
