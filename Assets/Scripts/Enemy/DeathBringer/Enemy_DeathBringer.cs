@@ -392,7 +392,7 @@ public class Enemy_DeathBringer : Enemy
             return;
 
         isBossDead = true;
-        AudioManager.PlaySFX(SfxType.BossDeath, .9f);
+        AudioManager.PlaySFX(SfxType.BossDeath, .35f);
 
         stateMachine.ChangeState(deadState);
 

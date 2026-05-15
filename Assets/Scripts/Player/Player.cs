@@ -112,7 +112,7 @@ public class Player : Entity
             return;
 
         isDead = true;
-        AudioManager.PlaySFX(SfxType.PlayerDeath, .85f);
+        AudioManager.PlaySFX(SfxType.PlayerDeath, .35f);
 
         if (anim != null)
             anim.SetBool("Die", true);

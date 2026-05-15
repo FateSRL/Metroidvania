@@ -125,7 +125,7 @@ public class DeathBringerPhaseLaser : MonoBehaviour
         if (!locked)
             LockLaser();
 
-        AudioManager.PlaySFX(SfxType.BossLaser, .85f);
+        AudioManager.PlaySFX(SfxType.BossLaser, .3f);
 
         lineRenderer.startColor = new Color(1f, 0, 0, 1f);
         lineRenderer.endColor = new Color(.75f, 0, 0, 1f);
