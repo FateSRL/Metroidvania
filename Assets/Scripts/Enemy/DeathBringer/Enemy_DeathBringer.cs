@@ -386,6 +386,14 @@ public class Enemy_DeathBringer : Enemy
         attackCooldown = Random.Range(minCooldown, maxCooldown);
     }
 
+    public override void FreezeTime(bool timeFrozen)
+    {
+        if (timeFrozen)
+            InterruptForBlackhole();
+
+        base.FreezeTime(timeFrozen);
+    }
+
     public override void Die()
     {
         if (isBossDead)
@@ -431,5 +439,19 @@ public class Enemy_DeathBringer : Enemy
 
         phaseTwoTransitionStarted = true;
         stateMachine.ChangeState(phaseTransitionState);
+    }
+
+    private void InterruptForBlackhole()
+    {
+        if (isBossDead || stateMachine == null || stateMachine.currentState == null)
+            return;
+
+        EnemyState currentState = stateMachine.currentState;
+
+        if (currentState != attackState && currentState != spellCastState && currentState != teleportState)
+            return;
+
+        stateMachine.ChangeState(idleState);
+        ZeroVelocity();
     }
 }

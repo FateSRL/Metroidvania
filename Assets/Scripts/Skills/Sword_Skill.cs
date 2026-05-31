@@ -54,6 +54,9 @@ public class Sword_Skill : Skill
         if (player.sword != null)
             return;
 
+        if (!IsReady())
+            return;
+
         if (skillPrefab == null)
         {
             Debug.LogError("Sword_Skill: skillPrefab is not assigned in the Inspector.", this);

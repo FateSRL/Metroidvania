@@ -36,14 +36,15 @@ public class Blackhole_Skill_Controller : MonoBehaviour
 
             transform.localScale = Vector3.Lerp(transform.localScale, Vector3.one * maxSize, growSpeed * Time.deltaTime);
 
-            if (damageTimesLeft > 0 && damageTimer <= 0)
+            if (damageTimesLeft > 0 && damageTimer <= 0 && DamageEnemies())
             {
-                DamageEnemies();
                 damageTimesLeft--;
                 damageTimer = damageInterval;
             }
 
-            if (blackholeTimer <= 0)
+            bool damageSequenceFinished = damageTimesLeft <= 0 || enemies.Count == 0;
+
+            if (blackholeTimer <= 0 && damageSequenceFinished)
                 FinishBlackhole();
         }
         else
@@ -57,7 +58,7 @@ public class Blackhole_Skill_Controller : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Enemy enemy = collision.GetComponent<Enemy>();
+        Enemy enemy = collision.GetComponentInParent<Enemy>();
 
         if (enemy == null || enemies.Contains(enemy))
             return;
@@ -68,7 +69,7 @@ public class Blackhole_Skill_Controller : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Enemy enemy = collision.GetComponent<Enemy>();
+        Enemy enemy = collision.GetComponentInParent<Enemy>();
 
         if (enemy == null)
             return;
@@ -82,19 +83,26 @@ public class Blackhole_Skill_Controller : MonoBehaviour
         ReleaseEnemies();
     }
 
-    private void DamageEnemies()
+    private bool DamageEnemies()
     {
+        bool damagedEnemy = false;
+
         for (int i = enemies.Count - 1; i >= 0; i--)
         {
-            if (enemies[i] == null)
+            Enemy enemy = enemies[i];
+
+            if (enemy == null)
             {
                 enemies.RemoveAt(i);
                 continue;
             }
 
-            enemies[i].TakeBlackholeDamage();
-            enemies[i].FreezeTime(true);
+            enemy.TakeBlackholeDamage();
+            enemy.FreezeTime(true);
+            damagedEnemy = true;
         }
+
+        return damagedEnemy;
     }
 
     private void FinishBlackhole()

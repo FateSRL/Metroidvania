@@ -8,7 +8,7 @@ public class Blackhole_Skill : Skill
     [SerializeField] private float growSpeed = 3;
     [SerializeField] private float shrinkSpeed = 6;
     [SerializeField] private float blackholeDuration = 3;
-    [SerializeField] private int damageTimes = 3;
+    [SerializeField] private int damageTimes = 10;
 
     [Header("Visuals")]
     [SerializeField] private Sprite blackholeFxSprite;
@@ -18,11 +18,40 @@ public class Blackhole_Skill : Skill
 
     private Blackhole_Skill_Controller currentBlackhole;
     private static Sprite runtimeBlackholeSprite;
+    private bool cooldownWaitsForLanding;
 
     protected override void Start()
     {
         base.Start();
         cooldownTimer = -1;
+    }
+
+    protected override void Update()
+    {
+        base.Update();
+
+        if (!cooldownWaitsForLanding || player == null || !player.IsGroundDetected())
+            return;
+
+        cooldownWaitsForLanding = false;
+        StartCooldown();
+    }
+
+    public override bool IsReady()
+    {
+        return base.IsReady() && currentBlackhole == null && !cooldownWaitsForLanding;
+    }
+
+    public override bool CanUseSkill()
+    {
+        if (!IsReady())
+        {
+            Debug.Log("Skill is on cooldown");
+            return false;
+        }
+
+        UseSkill();
+        return true;
     }
 
     public override void UseSkill()
@@ -53,6 +82,7 @@ public class Blackhole_Skill : Skill
         if (currentBlackhole.playerCanExitState)
         {
             currentBlackhole = null;
+            cooldownWaitsForLanding = true;
             return true;
         }
 

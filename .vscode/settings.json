@@ -1,23 +1,24 @@
 {
-  "files.exclude": {
-    "**/Udemy course - Rpg": true,
-    "**/Library": true,
-    "**/Temp": true,
-    "**/Logs": true,
-    "**/UserSettings": true
-  },
-  "search.exclude": {
-    "**/Udemy course - Rpg/**": true,
-    "**/Library/**": true,
-    "**/Temp/**": true,
-    "**/Logs/**": true,
-    "**/UserSettings/**": true
-  },
-  "files.watcherExclude": {
-    "**/Udemy course - Rpg/**": true,
-    "**/Library/**": true,
-    "**/Temp/**": true,
-    "**/Logs/**": true,
-    "**/UserSettings/**": true
-  }
+    "files.exclude": {
+        "**/Udemy course - Rpg": true,
+        "**/Library": true,
+        "**/Temp": true,
+        "**/Logs": true,
+        "**/UserSettings": true
+    },
+    "search.exclude": {
+        "**/Udemy course - Rpg/**": true,
+        "**/Library/**": true,
+        "**/Temp/**": true,
+        "**/Logs/**": true,
+        "**/UserSettings/**": true
+    },
+    "files.watcherExclude": {
+        "**/Udemy course - Rpg/**": true,
+        "**/Library/**": true,
+        "**/Temp/**": true,
+        "**/Logs/**": true,
+        "**/UserSettings/**": true
+    },
+    "dotnet.defaultSolution": "Metroidvania.sln"
 }

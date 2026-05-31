@@ -173,7 +173,7 @@ MonoBehaviour:
   stunDuration: 0
   stunDirection: {x: 0, y: 0}
   counterImage: {fileID: 0}
-  moveSpeed: 2.6
+  moveSpeed: 3
   idleTime: 0.6
   battleTime: 7
   targetOverlapEpsilon: 1
@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5da8059980c6b4a4aad77abf042eb159, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 15
+  maxHealth: 40
   damage: 2
   destroyDelay: 1.35
 --- !u!1 &4054605060302443642

@@ -103,7 +103,9 @@ public class Enemy : Entity
 
     public virtual void TakeBlackholeDamage()
     {
-        if (stats != null && !stats.TakeDamage(1))
+        int blackholeDamage = GetPlayerAttackDamage();
+
+        if (stats != null && !stats.TakeDamage(blackholeDamage))
             return;
 
         if (fx != null)
@@ -112,6 +114,14 @@ public class Enemy : Entity
         AudioManager.PlaySFX(SfxType.EnemyHit, .45f);
 
         Debug.Log(transform.name + " took blackhole damage");
+    }
+
+    private int GetPlayerAttackDamage()
+    {
+        if (PlayerManager.instance == null || PlayerManager.instance.player == null || PlayerManager.instance.player.stats == null)
+            return 1;
+
+        return Mathf.Max(1, PlayerManager.instance.player.stats.GetDamage());
     }
 
     public virtual void Die()
@@ -123,7 +133,10 @@ public class Enemy : Entity
         AudioManager.PlaySFX(SfxType.EnemyDeath, .7f);
 
         if (anim != null)
+        {
+            anim.speed = defaultAnimSpeed;
             anim.SetBool("Die", true);
+        }
 
         if (counterImage != null)
             counterImage.SetActive(false);

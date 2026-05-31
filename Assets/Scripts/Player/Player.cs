@@ -137,6 +137,10 @@ public class Player : Entity
         GameObject swordToDestroy = sword;
         stateMachine.ChangeState(catchSwordState);
         sword = null;
+
+        if (SkillManager.instance != null && SkillManager.instance.sword != null)
+            SkillManager.instance.sword.StartCooldown();
+
         AudioManager.PlaySFX(SfxType.SwordCatch, .65f);
         Destroy(swordToDestroy);
     }
@@ -151,7 +155,8 @@ public class Player : Entity
             return;
         }
         // dashUsageTimer -= Time.deltaTime;
-        if (Input.GetKeyDown(KeyCode.LeftShift) && SkillManager.instance.dash.CanUseSkill())
+        //
+        if (Input.GetKeyDown(KeyCode.LeftShift)&& SkillManager.instance.dash.CanUseSkill() )
         {
             // dashUsageTimer = dashCooldown;
             dashDir = Input.GetAxisRaw("Horizontal");

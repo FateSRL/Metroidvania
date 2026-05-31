@@ -1,0 +1,1087 @@
+{
+  "file": "E:\\Project_Metroidvania\\Metroidvania\\output\\format_fix_latest_working.docx",
+  "comment_count": 47,
+  "comments": [
+    {
+      "id": "3",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"中文摘要两字\"的段前磅数不符合要求，标准：2.0磅（折合0.1行）|实际：31.8磅（折合2.0行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "摘    要"
+            },
+            {
+              "where": "end",
+              "text": "摘    要"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"中文关键词三字\"的首行缩进不符合要求，标准：0.0磅(0.0字符) |实际：21.0磅(2.0字符)；\n\"中文关键词内容\"的首行缩进不符合要求，标准：0.0磅(0.0字符) |实际：21.0磅(2.0字符)；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            },
+            {
+              "where": "end",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文一级标题\"的段后磅数不符合要求，标准：1.0磅（折合0.1行）|实际：15.9磅（折合1.0行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "1 绪论"
+            },
+            {
+              "where": "end",
+              "text": "1 绪论"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "1.1 选题背景与意义"
+            },
+            {
+              "where": "end",
+              "text": "1.1 选题背景与意义"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "1.2 国内外研究现状"
+            },
+            {
+              "where": "end",
+              "text": "1.2 国内外研究现状"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "1.3 本文主要工作"
+            },
+            {
+              "where": "end",
+              "text": "1.3 本文主要工作"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "27",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "1.4 论文组织结构"
+            },
+            {
+              "where": "end",
+              "text": "1.4 论文组织结构"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "31",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文一级标题\"的段后磅数不符合要求，标准：1.0磅（折合0.1行）|实际：15.9磅（折合1.0行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2 需求分析"
+            },
+            {
+              "where": "end",
+              "text": "2 需求分析"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "35",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.1 系统目标"
+            },
+            {
+              "where": "end",
+              "text": "2.1 系统目标"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "39",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.2 功能需求分析"
+            },
+            {
+              "where": "end",
+              "text": "2.2 功能需求分析"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "43",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文三级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.2.1 玩家控制需求"
+            },
+            {
+              "where": "end",
+              "text": "2.2.1 玩家控制需求"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "47",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文三级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.2.2 战斗与技能需求"
+            },
+            {
+              "where": "end",
+              "text": "2.2.2 战斗与技能需求"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "51",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文三级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.2.3 敌人与Boss需求"
+            },
+            {
+              "where": "end",
+              "text": "2.2.3 敌人与Boss需求"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "55",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文三级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.2.4 UI与流程需求"
+            },
+            {
+              "where": "end",
+              "text": "2.2.4 UI与流程需求"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "58",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文三级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.2.5 关卡机关与流程解锁需求"
+            },
+            {
+              "where": "end",
+              "text": "2.2.5 关卡机关与流程解锁需求"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "62",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.3 非功能需求分析"
+            },
+            {
+              "where": "end",
+              "text": "2.3 非功能需求分析"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "66",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.4 可行性分析"
+            },
+            {
+              "where": "end",
+              "text": "2.4 可行性分析"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "70",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文一级标题\"的段后磅数不符合要求，标准：1.0磅（折合0.1行）|实际：15.9磅（折合1.0行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "3 系统总体设计"
+            },
+            {
+              "where": "end",
+              "text": "3 系统总体设计"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "74",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "3.1 开发环境与技术选型"
+            },
+            {
+              "where": "end",
+              "text": "3.1 开发环境与技术选型"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "78",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "3.2 系统总体架构"
+            },
+            {
+              "where": "end",
+              "text": "3.2 系统总体架构"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "82",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "3.3 核心模块划分"
+            },
+            {
+              "where": "end",
+              "text": "3.3 核心模块划分"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "86",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "3.4 状态机设计"
+            },
+            {
+              "where": "end",
+              "text": "3.4 状态机设计"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "90",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "3.5 资源与场景组织设计"
+            },
+            {
+              "where": "end",
+              "text": "3.5 资源与场景组织设计"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "93",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "3.6 关卡流程与交互事件设计"
+            },
+            {
+              "where": "end",
+              "text": "3.6 关卡流程与交互事件设计"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "94",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文\"的(中文)字体名称不符合要求，标准：宋体|实际：Times New Roman",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "从工程实现的角度来说，关卡事件层被控制在比较轻量的范围内，项目没有引入完整的任务系统、事件总线或者存档驱动的关卡状态，而是用现有的CharacterStats事件、Collider2D触发器、Tilemap接口来完成局部事件；该选择与毕业Demo的目标相契合，一方面可以展示“击败敌人后改变场景”的流程逻辑，另一方面也不会因为系统过大而造成调试成本的上升，如果后续要扩展成正式游戏，可以在此基础上抽象"
+            },
+            {
+              "where": "end",
+              "text": "从工程实现的角度来说，关卡事件层被控制在比较轻量的范围内，项目没有引入完整的任务系统、事件总线或者存档驱动的关卡状态，而是用现有的CharacterStats事件、Collider2D触发器、Tilemap接口来完成局部事件；该选择与毕业Demo的目标相契合，一方面可以展示“击败敌人后改变场景”的流程逻辑，另一方面也不会因为系统过大而造成调试成本的上升，如果后续要扩展成正式游戏，可以在此基础上抽象"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "95",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文\"的(中文)字体名称不符合要求，标准：宋体|实际：Times New Roman",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "从工程实现的角度来说，关卡事件层被控制在比较轻量的范围内，项目没有引入完整的任务系统、事件总线或者存档驱动的关卡状态，而是用现有的CharacterStats事件、Collider2D触发器、Tilemap接口来完成局部事件；该选择与毕业Demo的目标相契合，一方面可以展示“击败敌人后改变场景”的流程逻辑，另一方面也不会因为系统过大而造成调试成本的上升，如果后续要扩展成正式游戏，可以在此基础上抽象"
+            },
+            {
+              "where": "end",
+              "text": "从工程实现的角度来说，关卡事件层被控制在比较轻量的范围内，项目没有引入完整的任务系统、事件总线或者存档驱动的关卡状态，而是用现有的CharacterStats事件、Collider2D触发器、Tilemap接口来完成局部事件；该选择与毕业Demo的目标相契合，一方面可以展示“击败敌人后改变场景”的流程逻辑，另一方面也不会因为系统过大而造成调试成本的上升，如果后续要扩展成正式游戏，可以在此基础上抽象"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "96",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文\"的(中文)字体名称不符合要求，标准：宋体|实际：Times New Roman",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关卡中可以通行和不可以通行的区域由TilemapCollider2D来处理，这样地图编辑和碰撞生成就统一了，绘制砖块就会产生阻挡效果，移除砖块的时候也会同时解除碰撞，骷髅王通路解锁就是利用这一点实现的，脚本不直接移动墙体，也不单独关闭某个BoxCollider2D，而是移除Ground Tilemap中的具体cell，由于视觉和物理来源一致，玩家看到砖块消失后就可以通过，减少了“看起来能走但被挡住"
+            },
+            {
+              "where": "end",
+              "text": "关卡中可以通行和不可以通行的区域由TilemapCollider2D来处理，这样地图编辑和碰撞生成就统一了，绘制砖块就会产生阻挡效果，移除砖块的时候也会同时解除碰撞，骷髅王通路解锁就是利用这一点实现的，脚本不直接移动墙体，也不单独关闭某个BoxCollider2D，而是移除Ground Tilemap中的具体cell，由于视觉和物理来源一致，玩家看到砖块消失后就可以通过，减少了“看起来能走但被挡住"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "97",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文\"的(中文)字体名称不符合要求，标准：宋体|实际：Times New Roman",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关卡中可以通行和不可以通行的区域由TilemapCollider2D来处理，这样地图编辑和碰撞生成就统一了，绘制砖块就会产生阻挡效果，移除砖块的时候也会同时解除碰撞，骷髅王通路解锁就是利用这一点实现的，脚本不直接移动墙体，也不单独关闭某个BoxCollider2D，而是移除Ground Tilemap中的具体cell，由于视觉和物理来源一致，玩家看到砖块消失后就可以通过，减少了“看起来能走但被挡住"
+            },
+            {
+              "where": "end",
+              "text": "关卡中可以通行和不可以通行的区域由TilemapCollider2D来处理，这样地图编辑和碰撞生成就统一了，绘制砖块就会产生阻挡效果，移除砖块的时候也会同时解除碰撞，骷髅王通路解锁就是利用这一点实现的，脚本不直接移动墙体，也不单独关闭某个BoxCollider2D，而是移除Ground Tilemap中的具体cell，由于视觉和物理来源一致，玩家看到砖块消失后就可以通过，减少了“看起来能走但被挡住"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文\"的(中文)字体名称不符合要求，标准：宋体|实际：Times New Roman",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关卡中可以通行和不可以通行的区域由TilemapCollider2D来处理，这样地图编辑和碰撞生成就统一了，绘制砖块就会产生阻挡效果，移除砖块的时候也会同时解除碰撞，骷髅王通路解锁就是利用这一点实现的，脚本不直接移动墙体，也不单独关闭某个BoxCollider2D，而是移除Ground Tilemap中的具体cell，由于视觉和物理来源一致，玩家看到砖块消失后就可以通过，减少了“看起来能走但被挡住"
+            },
+            {
+              "where": "end",
+              "text": "关卡中可以通行和不可以通行的区域由TilemapCollider2D来处理，这样地图编辑和碰撞生成就统一了，绘制砖块就会产生阻挡效果，移除砖块的时候也会同时解除碰撞，骷髅王通路解锁就是利用这一点实现的，脚本不直接移动墙体，也不单独关闭某个BoxCollider2D，而是移除Ground Tilemap中的具体cell，由于视觉和物理来源一致，玩家看到砖块消失后就可以通过，减少了“看起来能走但被挡住"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "99",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文\"的(中文)字体名称不符合要求，标准：宋体|实际：Times New Roman",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关卡中可以通行和不可以通行的区域由TilemapCollider2D来处理，这样地图编辑和碰撞生成就统一了，绘制砖块就会产生阻挡效果，移除砖块的时候也会同时解除碰撞，骷髅王通路解锁就是利用这一点实现的，脚本不直接移动墙体，也不单独关闭某个BoxCollider2D，而是移除Ground Tilemap中的具体cell，由于视觉和物理来源一致，玩家看到砖块消失后就可以通过，减少了“看起来能走但被挡住"
+            },
+            {
+              "where": "end",
+              "text": "关卡中可以通行和不可以通行的区域由TilemapCollider2D来处理，这样地图编辑和碰撞生成就统一了，绘制砖块就会产生阻挡效果，移除砖块的时候也会同时解除碰撞，骷髅王通路解锁就是利用这一点实现的，脚本不直接移动墙体，也不单独关闭某个BoxCollider2D，而是移除Ground Tilemap中的具体cell，由于视觉和物理来源一致，玩家看到砖块消失后就可以通过，减少了“看起来能走但被挡住"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "103",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文一级标题\"的段后磅数不符合要求，标准：1.0磅（折合0.1行）|实际：15.9磅（折合1.0行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4 系统详细设计与实现"
+            },
+            {
+              "where": "end",
+              "text": "4 系统详细设计与实现"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "107",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4.1 玩家控制系统实现"
+            },
+            {
+              "where": "end",
+              "text": "4.1 玩家控制系统实现"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "111",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4.2 角色属性与伤害判定实现"
+            },
+            {
+              "where": "end",
+              "text": "4.2 角色属性与伤害判定实现"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "115",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4.3 技能系统实现"
+            },
+            {
+              "where": "end",
+              "text": "4.3 技能系统实现"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "119",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4.4 普通敌人AI实现"
+            },
+            {
+              "where": "end",
+              "text": "4.4 普通敌人AI实现"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "122",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4.5 关卡机关与精英敌人实现"
+            },
+            {
+              "where": "end",
+              "text": "4.5 关卡机关与精英敌人实现"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "123",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文\"的(中文)字体名称不符合要求，标准：宋体|实际：Times New Roman",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "触发检测并没有直接放在石块本体上，而是为每一个石块创建了一个独立的FallingStoneTrapSensor，传感器是一个触发器Collider2D，只覆盖石块正下方一定的宽度范围，当玩家进入这个范围的时候调用对应的石块的Trigger方法；这样可以保证“谁检测到谁下落”，减少多个石块被同一个触发器连带触发，因为传感器固定在世界空间，石块下落和回收不会改变检测区域的位置，机关重复运行时更加稳定。"
+            },
+            {
+              "where": "end",
+              "text": "触发检测并没有直接放在石块本体上，而是为每一个石块创建了一个独立的FallingStoneTrapSensor，传感器是一个触发器Collider2D，只覆盖石块正下方一定的宽度范围，当玩家进入这个范围的时候调用对应的石块的Trigger方法；这样可以保证“谁检测到谁下落”，减少多个石块被同一个触发器连带触发，因为传感器固定在世界空间，石块下落和回收不会改变检测区域的位置，机关重复运行时更加稳定。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "124",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文\"的(中文)字体名称不符合要求，标准：宋体|实际：Times New Roman",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "触发检测并没有直接放在石块本体上，而是为每一个石块创建了一个独立的FallingStoneTrapSensor，传感器是一个触发器Collider2D，只覆盖石块正下方一定的宽度范围，当玩家进入这个范围的时候调用对应的石块的Trigger方法；这样可以保证“谁检测到谁下落”，减少多个石块被同一个触发器连带触发，因为传感器固定在世界空间，石块下落和回收不会改变检测区域的位置，机关重复运行时更加稳定。"
+            },
+            {
+              "where": "end",
+              "text": "触发检测并没有直接放在石块本体上，而是为每一个石块创建了一个独立的FallingStoneTrapSensor，传感器是一个触发器Collider2D，只覆盖石块正下方一定的宽度范围，当玩家进入这个范围的时候调用对应的石块的Trigger方法；这样可以保证“谁检测到谁下落”，减少多个石块被同一个触发器连带触发，因为传感器固定在世界空间，石块下落和回收不会改变检测区域的位置，机关重复运行时更加稳定。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "127",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4.6 Boss战斗系统实现"
+            },
+            {
+              "where": "end",
+              "text": "4.6 Boss战斗系统实现"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "130",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4.7 UI与音效系统实现"
+            },
+            {
+              "where": "end",
+              "text": "4.7 UI与音效系统实现"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "134",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文一级标题\"的段后磅数不符合要求，标准：1.0磅（折合0.1行）|实际：15.9磅（折合1.0行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "5 系统测试"
+            },
+            {
+              "where": "end",
+              "text": "5 系统测试"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "138",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "5.1 测试环境与测试方法"
+            },
+            {
+              "where": "end",
+              "text": "5.1 测试环境与测试方法"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "142",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "5.2 功能测试"
+            },
+            {
+              "where": "end",
+              "text": "5.2 功能测试"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "146",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "5.3 典型问题与优化"
+            },
+            {
+              "where": "end",
+              "text": "5.3 典型问题与优化"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "147",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文\"的(中文)字体名称不符合要求，标准：宋体|实际：Times New Roman",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "第十一条类问题演示用Demo的复杂度控制在合理范围内，随着功能的增加，项目中已经包含了玩家状态机、普通敌人、技能、机关、精英怪、Boss以及UI流程等，如果再加入背包、钥匙数量、存档、多场景切换等功能，短期内会增加大量的测试压力；因此目前版本只实现了击败敌人后解锁道路的设计意图，并且没有实现完整的钥匙系统，取舍是为了保持“击败敌人后解锁道路”的设计思路，同时减少由于一个演示节点而引入过多的系统。"
+            },
+            {
+              "where": "end",
+              "text": "第十一条类问题演示用Demo的复杂度控制在合理范围内，随着功能的增加，项目中已经包含了玩家状态机、普通敌人、技能、机关、精英怪、Boss以及UI流程等，如果再加入背包、钥匙数量、存档、多场景切换等功能，短期内会增加大量的测试压力；因此目前版本只实现了击败敌人后解锁道路的设计意图，并且没有实现完整的钥匙系统，取舍是为了保持“击败敌人后解锁道路”的设计思路，同时减少由于一个演示节点而引入过多的系统。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "148",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文\"的(中文)字体名称不符合要求，标准：宋体|实际：Times New Roman",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "第十一条类问题演示用Demo的复杂度控制在合理范围内，随着功能的增加，项目中已经包含了玩家状态机、普通敌人、技能、机关、精英怪、Boss以及UI流程等，如果再加入背包、钥匙数量、存档、多场景切换等功能，短期内会增加大量的测试压力；因此目前版本只实现了击败敌人后解锁道路的设计意图，并且没有实现完整的钥匙系统，取舍是为了保持“击败敌人后解锁道路”的设计思路，同时减少由于一个演示节点而引入过多的系统。"
+            },
+            {
+              "where": "end",
+              "text": "第十一条类问题演示用Demo的复杂度控制在合理范围内，随着功能的增加，项目中已经包含了玩家状态机、普通敌人、技能、机关、精英怪、Boss以及UI流程等，如果再加入背包、钥匙数量、存档、多场景切换等功能，短期内会增加大量的测试压力；因此目前版本只实现了击败敌人后解锁道路的设计意图，并且没有实现完整的钥匙系统，取舍是为了保持“击败敌人后解锁道路”的设计思路，同时减少由于一个演示节点而引入过多的系统。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "152",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:27:15Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "5.4 测试结果分析"
+            },
+            {
+              "where": "end",
+              "text": "5.4 测试结果分析"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

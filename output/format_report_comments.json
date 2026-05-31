@@ -1,0 +1,2697 @@
+{
+  "file": "E:\\Project_Metroidvania\\Metroidvania\\output\\format_report_comments_input.docx",
+  "comment_count": 117,
+  "comments": [
+    {
+      "id": "3",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"中文摘要两字\"的行间距不符合要求，标准：1.5倍行距|实际：1倍行距；\n\"中文摘要两字\"的段前磅数不符合要求，标准：2.0磅（折合0.1行）|实际：31.8磅（折合2.0行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "摘    要"
+            },
+            {
+              "where": "end",
+              "text": "摘    要"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"中文关键词三字\"的行间距不符合要求，标准：20.00磅|实际：1.25倍行距；\n\"中文关键词三字\"的首行缩进不符合要求，标准：0.0磅(0.0字符) |实际：24.0磅(2.0字符)；\n\"中文关键词内容\"的行间距不符合要求，标准：20.00磅|实际：1.25倍行距；\n\"中文关键词内容\"的首行缩进不符合要求，标准：0.0磅(0.0字符) |实际：24.0磅(2.0字符)；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            },
+            {
+              "where": "end",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"中文关键词三字\"的(中文)字体名称不符合要求，标准：黑体|实际：宋体",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            },
+            {
+              "where": "end",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"中文关键词三字\"的(中文)字号不符合要求，标准：10.5|实际：12.0",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            },
+            {
+              "where": "end",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"中文关键词内容\"的(英文)字号不符合要求，标准：10.5|实际：12.0",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            },
+            {
+              "where": "end",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"中文关键词内容\"的(中文)字体名称不符合要求，标准：黑体|实际：宋体",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            },
+            {
+              "where": "end",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"中文关键词内容\"的(中文)字号不符合要求，标准：10.5|实际：12.0",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            },
+            {
+              "where": "end",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"中文关键词内容\"的(英文)字号不符合要求，标准：10.5|实际：12.0",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            },
+            {
+              "where": "end",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"中文关键词内容\"的(中文)字体名称不符合要求，标准：黑体|实际：宋体",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            },
+            {
+              "where": "end",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"中文关键词内容\"的(中文)字号不符合要求，标准：10.5|实际：12.0",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            },
+            {
+              "where": "end",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"中文关键词内容\"的(英文)字号不符合要求，标准：10.5|实际：12.0",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            },
+            {
+              "where": "end",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"中文关键词内容\"的(中文)字体名称不符合要求，标准：黑体|实际：宋体",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            },
+            {
+              "where": "end",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"中文关键词内容\"的(中文)字号不符合要求，标准：10.5|实际：12.0",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            },
+            {
+              "where": "end",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"中文关键词内容\"的(英文)字号不符合要求，标准：10.5|实际：12.0",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            },
+            {
+              "where": "end",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"中文关键词内容\"的(中文)字体名称不符合要求，标准：黑体|实际：宋体",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            },
+            {
+              "where": "end",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"中文关键词内容\"的(中文)字号不符合要求，标准：10.5|实际：12.0",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            },
+            {
+              "where": "end",
+              "text": "关键词：Unity；C#；2D动作游戏；有限状态机；Boss战"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"英文关键词内容\"的行间距不符合要求，标准：1倍行距|实际：1.25倍行距；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "Key words: Unity; C#; 2D action game; finite state machine; boss fight"
+            },
+            {
+              "where": "end",
+              "text": "Key words: Unity; C#; 2D action game; finite state machine; boss fight"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"一级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "摘    要\tI"
+            },
+            {
+              "where": "end",
+              "text": "摘    要\tI"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"一级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "ABSTRACT\tII"
+            },
+            {
+              "where": "end",
+              "text": "ABSTRACT\tII"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"一级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "1 绪论\t1"
+            },
+            {
+              "where": "end",
+              "text": "1 绪论\t1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "1.1 选题背景与意义\t1"
+            },
+            {
+              "where": "end",
+              "text": "1.1 选题背景与意义\t1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "27",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "1.2 国内外研究现状\t1"
+            },
+            {
+              "where": "end",
+              "text": "1.2 国内外研究现状\t1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "28",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "1.3 本文主要工作\t2"
+            },
+            {
+              "where": "end",
+              "text": "1.3 本文主要工作\t2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "29",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "1.4 论文组织结构\t2"
+            },
+            {
+              "where": "end",
+              "text": "1.4 论文组织结构\t2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"一级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2 需求分析\t3"
+            },
+            {
+              "where": "end",
+              "text": "2 需求分析\t3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "31",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.1 系统目标\t3"
+            },
+            {
+              "where": "end",
+              "text": "2.1 系统目标\t3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "32",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.2 功能需求分析\t3"
+            },
+            {
+              "where": "end",
+              "text": "2.2 功能需求分析\t3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "33",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"三级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.2.1 玩家控制需求\t4"
+            },
+            {
+              "where": "end",
+              "text": "2.2.1 玩家控制需求\t4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "34",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"三级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.2.2 战斗与技能需求\t4"
+            },
+            {
+              "where": "end",
+              "text": "2.2.2 战斗与技能需求\t4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "35",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"三级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.2.3 敌人与Boss需求\t4"
+            },
+            {
+              "where": "end",
+              "text": "2.2.3 敌人与Boss需求\t4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "36",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"三级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.2.4 UI与流程需求\t4"
+            },
+            {
+              "where": "end",
+              "text": "2.2.4 UI与流程需求\t4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "37",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"三级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.2.5 关卡机关与流程解锁需求\t5"
+            },
+            {
+              "where": "end",
+              "text": "2.2.5 关卡机关与流程解锁需求\t5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "38",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.3 非功能需求分析\t5"
+            },
+            {
+              "where": "end",
+              "text": "2.3 非功能需求分析\t5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "39",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.4 可行性分析\t6"
+            },
+            {
+              "where": "end",
+              "text": "2.4 可行性分析\t6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "40",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"一级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "3 系统总体设计\t7"
+            },
+            {
+              "where": "end",
+              "text": "3 系统总体设计\t7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "41",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "3.1 开发环境与技术选型\t7"
+            },
+            {
+              "where": "end",
+              "text": "3.1 开发环境与技术选型\t7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "42",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "3.2 系统总体架构\t7"
+            },
+            {
+              "where": "end",
+              "text": "3.2 系统总体架构\t7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "43",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "3.3 核心模块划分\t8"
+            },
+            {
+              "where": "end",
+              "text": "3.3 核心模块划分\t8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "44",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "3.4 状态机设计\t9"
+            },
+            {
+              "where": "end",
+              "text": "3.4 状态机设计\t9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "45",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "3.5 资源与场景组织设计\t10"
+            },
+            {
+              "where": "end",
+              "text": "3.5 资源与场景组织设计\t10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "46",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "3.6 关卡流程与交互事件设计\t11"
+            },
+            {
+              "where": "end",
+              "text": "3.6 关卡流程与交互事件设计\t11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "47",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"一级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4 系统详细设计与实现\t13"
+            },
+            {
+              "where": "end",
+              "text": "4 系统详细设计与实现\t13"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "48",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4.1 玩家控制系统实现\t13"
+            },
+            {
+              "where": "end",
+              "text": "4.1 玩家控制系统实现\t13"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "49",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4.2 角色属性与伤害判定实现\t15"
+            },
+            {
+              "where": "end",
+              "text": "4.2 角色属性与伤害判定实现\t15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "50",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4.3 技能系统实现\t16"
+            },
+            {
+              "where": "end",
+              "text": "4.3 技能系统实现\t16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "51",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4.4 普通敌人AI实现\t18"
+            },
+            {
+              "where": "end",
+              "text": "4.4 普通敌人AI实现\t18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "52",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4.5 关卡机关与精英敌人实现\t19"
+            },
+            {
+              "where": "end",
+              "text": "4.5 关卡机关与精英敌人实现\t19"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "53",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4.6 Boss战斗系统实现\t21"
+            },
+            {
+              "where": "end",
+              "text": "4.6 Boss战斗系统实现\t21"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "54",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4.7 UI与音效系统实现\t24"
+            },
+            {
+              "where": "end",
+              "text": "4.7 UI与音效系统实现\t24"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "55",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"一级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "5 系统测试\t26"
+            },
+            {
+              "where": "end",
+              "text": "5 系统测试\t26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "56",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "5.1 测试环境与测试方法\t26"
+            },
+            {
+              "where": "end",
+              "text": "5.1 测试环境与测试方法\t26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "57",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "5.2 功能测试\t27"
+            },
+            {
+              "where": "end",
+              "text": "5.2 功能测试\t27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "58",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "5.3 典型问题与优化\t28"
+            },
+            {
+              "where": "end",
+              "text": "5.3 典型问题与优化\t28"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "59",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"二级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "5.4 测试结果分析\t30"
+            },
+            {
+              "where": "end",
+              "text": "5.4 测试结果分析\t30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "60",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"一级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "结    论\t32"
+            },
+            {
+              "where": "end",
+              "text": "结    论\t32"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "61",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"一级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "参 考 文 献\t35"
+            },
+            {
+              "where": "end",
+              "text": "参 考 文 献\t35"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "62",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"一级标题\"的对齐方式不符合要求，标准：分散对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "致    谢\t36"
+            },
+            {
+              "where": "end",
+              "text": "致    谢\t36"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "66",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文一级标题\"的段后磅数不符合要求，标准：1.0磅（折合0.1行）|实际：15.9磅（折合1.0行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "1 绪论"
+            },
+            {
+              "where": "end",
+              "text": "1 绪论"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "70",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "1.1 选题背景与意义"
+            },
+            {
+              "where": "end",
+              "text": "1.1 选题背景与意义"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "74",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "1.2 国内外研究现状"
+            },
+            {
+              "where": "end",
+              "text": "1.2 国内外研究现状"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "78",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "1.3 本文主要工作"
+            },
+            {
+              "where": "end",
+              "text": "1.3 本文主要工作"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "82",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "1.4 论文组织结构"
+            },
+            {
+              "where": "end",
+              "text": "1.4 论文组织结构"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "86",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文一级标题\"的段后磅数不符合要求，标准：1.0磅（折合0.1行）|实际：15.9磅（折合1.0行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2 需求分析"
+            },
+            {
+              "where": "end",
+              "text": "2 需求分析"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "90",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.1 系统目标"
+            },
+            {
+              "where": "end",
+              "text": "2.1 系统目标"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "94",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.2 功能需求分析"
+            },
+            {
+              "where": "end",
+              "text": "2.2 功能需求分析"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文三级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文三级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.2.1 玩家控制需求"
+            },
+            {
+              "where": "end",
+              "text": "2.2.1 玩家控制需求"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "102",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文三级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文三级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.2.2 战斗与技能需求"
+            },
+            {
+              "where": "end",
+              "text": "2.2.2 战斗与技能需求"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "106",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文三级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文三级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.2.3 敌人与Boss需求"
+            },
+            {
+              "where": "end",
+              "text": "2.2.3 敌人与Boss需求"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "110",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文三级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文三级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.2.4 UI与流程需求"
+            },
+            {
+              "where": "end",
+              "text": "2.2.4 UI与流程需求"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "113",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文三级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文三级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.2.5 关卡机关与流程解锁需求"
+            },
+            {
+              "where": "end",
+              "text": "2.2.5 关卡机关与流程解锁需求"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "117",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.3 非功能需求分析"
+            },
+            {
+              "where": "end",
+              "text": "2.3 非功能需求分析"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "121",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "2.4 可行性分析"
+            },
+            {
+              "where": "end",
+              "text": "2.4 可行性分析"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "125",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文一级标题\"的段后磅数不符合要求，标准：1.0磅（折合0.1行）|实际：15.9磅（折合1.0行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "3 系统总体设计"
+            },
+            {
+              "where": "end",
+              "text": "3 系统总体设计"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "129",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "3.1 开发环境与技术选型"
+            },
+            {
+              "where": "end",
+              "text": "3.1 开发环境与技术选型"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "133",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "3.2 系统总体架构"
+            },
+            {
+              "where": "end",
+              "text": "3.2 系统总体架构"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "137",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "3.3 核心模块划分"
+            },
+            {
+              "where": "end",
+              "text": "3.3 核心模块划分"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "141",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "3.4 状态机设计"
+            },
+            {
+              "where": "end",
+              "text": "3.4 状态机设计"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "145",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "3.5 资源与场景组织设计"
+            },
+            {
+              "where": "end",
+              "text": "3.5 资源与场景组织设计"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "148",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "3.6 关卡流程与交互事件设计"
+            },
+            {
+              "where": "end",
+              "text": "3.6 关卡流程与交互事件设计"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "149",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文\"的(中文)字体名称不符合要求，标准：宋体|实际：Times New Roman",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "从工程实现的角度来说，关卡事件层被控制在比较轻量的范围内，项目没有引入完整的任务系统、事件总线或者存档驱动的关卡状态，而是用现有的CharacterStats事件、Collider2D触发器、Tilemap接口来完成局部事件；该选择与毕业Demo的目标相契合，一方面可以展示“击败敌人后改变场景”的流程逻辑，另一方面也不会因为系统过大而造成调试成本的上升，如果后续要扩展成正式游戏，可以在此基础上抽象"
+            },
+            {
+              "where": "end",
+              "text": "从工程实现的角度来说，关卡事件层被控制在比较轻量的范围内，项目没有引入完整的任务系统、事件总线或者存档驱动的关卡状态，而是用现有的CharacterStats事件、Collider2D触发器、Tilemap接口来完成局部事件；该选择与毕业Demo的目标相契合，一方面可以展示“击败敌人后改变场景”的流程逻辑，另一方面也不会因为系统过大而造成调试成本的上升，如果后续要扩展成正式游戏，可以在此基础上抽象"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "150",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文\"的(中文)字体名称不符合要求，标准：宋体|实际：Times New Roman",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "从工程实现的角度来说，关卡事件层被控制在比较轻量的范围内，项目没有引入完整的任务系统、事件总线或者存档驱动的关卡状态，而是用现有的CharacterStats事件、Collider2D触发器、Tilemap接口来完成局部事件；该选择与毕业Demo的目标相契合，一方面可以展示“击败敌人后改变场景”的流程逻辑，另一方面也不会因为系统过大而造成调试成本的上升，如果后续要扩展成正式游戏，可以在此基础上抽象"
+            },
+            {
+              "where": "end",
+              "text": "从工程实现的角度来说，关卡事件层被控制在比较轻量的范围内，项目没有引入完整的任务系统、事件总线或者存档驱动的关卡状态，而是用现有的CharacterStats事件、Collider2D触发器、Tilemap接口来完成局部事件；该选择与毕业Demo的目标相契合，一方面可以展示“击败敌人后改变场景”的流程逻辑，另一方面也不会因为系统过大而造成调试成本的上升，如果后续要扩展成正式游戏，可以在此基础上抽象"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "151",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文\"的(中文)字体名称不符合要求，标准：宋体|实际：Times New Roman",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关卡中可以通行和不可以通行的区域由TilemapCollider2D来处理，这样地图编辑和碰撞生成就统一了，绘制砖块就会产生阻挡效果，移除砖块的时候也会同时解除碰撞，骷髅王通路解锁就是利用这一点实现的，脚本不直接移动墙体，也不单独关闭某个BoxCollider2D，而是移除Ground Tilemap中的具体cell，由于视觉和物理来源一致，玩家看到砖块消失后就可以通过，减少了“看起来能走但被挡住"
+            },
+            {
+              "where": "end",
+              "text": "关卡中可以通行和不可以通行的区域由TilemapCollider2D来处理，这样地图编辑和碰撞生成就统一了，绘制砖块就会产生阻挡效果，移除砖块的时候也会同时解除碰撞，骷髅王通路解锁就是利用这一点实现的，脚本不直接移动墙体，也不单独关闭某个BoxCollider2D，而是移除Ground Tilemap中的具体cell，由于视觉和物理来源一致，玩家看到砖块消失后就可以通过，减少了“看起来能走但被挡住"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "152",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文\"的(中文)字体名称不符合要求，标准：宋体|实际：Times New Roman",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关卡中可以通行和不可以通行的区域由TilemapCollider2D来处理，这样地图编辑和碰撞生成就统一了，绘制砖块就会产生阻挡效果，移除砖块的时候也会同时解除碰撞，骷髅王通路解锁就是利用这一点实现的，脚本不直接移动墙体，也不单独关闭某个BoxCollider2D，而是移除Ground Tilemap中的具体cell，由于视觉和物理来源一致，玩家看到砖块消失后就可以通过，减少了“看起来能走但被挡住"
+            },
+            {
+              "where": "end",
+              "text": "关卡中可以通行和不可以通行的区域由TilemapCollider2D来处理，这样地图编辑和碰撞生成就统一了，绘制砖块就会产生阻挡效果，移除砖块的时候也会同时解除碰撞，骷髅王通路解锁就是利用这一点实现的，脚本不直接移动墙体，也不单独关闭某个BoxCollider2D，而是移除Ground Tilemap中的具体cell，由于视觉和物理来源一致，玩家看到砖块消失后就可以通过，减少了“看起来能走但被挡住"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "153",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文\"的(中文)字体名称不符合要求，标准：宋体|实际：Times New Roman",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关卡中可以通行和不可以通行的区域由TilemapCollider2D来处理，这样地图编辑和碰撞生成就统一了，绘制砖块就会产生阻挡效果，移除砖块的时候也会同时解除碰撞，骷髅王通路解锁就是利用这一点实现的，脚本不直接移动墙体，也不单独关闭某个BoxCollider2D，而是移除Ground Tilemap中的具体cell，由于视觉和物理来源一致，玩家看到砖块消失后就可以通过，减少了“看起来能走但被挡住"
+            },
+            {
+              "where": "end",
+              "text": "关卡中可以通行和不可以通行的区域由TilemapCollider2D来处理，这样地图编辑和碰撞生成就统一了，绘制砖块就会产生阻挡效果，移除砖块的时候也会同时解除碰撞，骷髅王通路解锁就是利用这一点实现的，脚本不直接移动墙体，也不单独关闭某个BoxCollider2D，而是移除Ground Tilemap中的具体cell，由于视觉和物理来源一致，玩家看到砖块消失后就可以通过，减少了“看起来能走但被挡住"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "154",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文\"的(中文)字体名称不符合要求，标准：宋体|实际：Times New Roman",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "关卡中可以通行和不可以通行的区域由TilemapCollider2D来处理，这样地图编辑和碰撞生成就统一了，绘制砖块就会产生阻挡效果，移除砖块的时候也会同时解除碰撞，骷髅王通路解锁就是利用这一点实现的，脚本不直接移动墙体，也不单独关闭某个BoxCollider2D，而是移除Ground Tilemap中的具体cell，由于视觉和物理来源一致，玩家看到砖块消失后就可以通过，减少了“看起来能走但被挡住"
+            },
+            {
+              "where": "end",
+              "text": "关卡中可以通行和不可以通行的区域由TilemapCollider2D来处理，这样地图编辑和碰撞生成就统一了，绘制砖块就会产生阻挡效果，移除砖块的时候也会同时解除碰撞，骷髅王通路解锁就是利用这一点实现的，脚本不直接移动墙体，也不单独关闭某个BoxCollider2D，而是移除Ground Tilemap中的具体cell，由于视觉和物理来源一致，玩家看到砖块消失后就可以通过，减少了“看起来能走但被挡住"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "158",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文一级标题\"的段后磅数不符合要求，标准：1.0磅（折合0.1行）|实际：15.9磅（折合1.0行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4 系统详细设计与实现"
+            },
+            {
+              "where": "end",
+              "text": "4 系统详细设计与实现"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "162",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4.1 玩家控制系统实现"
+            },
+            {
+              "where": "end",
+              "text": "4.1 玩家控制系统实现"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "166",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4.2 角色属性与伤害判定实现"
+            },
+            {
+              "where": "end",
+              "text": "4.2 角色属性与伤害判定实现"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "170",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4.3 技能系统实现"
+            },
+            {
+              "where": "end",
+              "text": "4.3 技能系统实现"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "174",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4.4 普通敌人AI实现"
+            },
+            {
+              "where": "end",
+              "text": "4.4 普通敌人AI实现"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "177",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4.5 关卡机关与精英敌人实现"
+            },
+            {
+              "where": "end",
+              "text": "4.5 关卡机关与精英敌人实现"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "178",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文\"的(中文)字体名称不符合要求，标准：宋体|实际：Times New Roman",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "触发检测并没有直接放在石块本体上，而是为每一个石块创建了一个独立的FallingStoneTrapSensor，传感器是一个触发器Collider2D，只覆盖石块正下方一定的宽度范围，当玩家进入这个范围的时候调用对应的石块的Trigger方法；这样可以保证“谁检测到谁下落”，减少多个石块被同一个触发器连带触发，因为传感器固定在世界空间，石块下落和回收不会改变检测区域的位置，机关重复运行时更加稳定。"
+            },
+            {
+              "where": "end",
+              "text": "触发检测并没有直接放在石块本体上，而是为每一个石块创建了一个独立的FallingStoneTrapSensor，传感器是一个触发器Collider2D，只覆盖石块正下方一定的宽度范围，当玩家进入这个范围的时候调用对应的石块的Trigger方法；这样可以保证“谁检测到谁下落”，减少多个石块被同一个触发器连带触发，因为传感器固定在世界空间，石块下落和回收不会改变检测区域的位置，机关重复运行时更加稳定。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "179",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文\"的(中文)字体名称不符合要求，标准：宋体|实际：Times New Roman",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "触发检测并没有直接放在石块本体上，而是为每一个石块创建了一个独立的FallingStoneTrapSensor，传感器是一个触发器Collider2D，只覆盖石块正下方一定的宽度范围，当玩家进入这个范围的时候调用对应的石块的Trigger方法；这样可以保证“谁检测到谁下落”，减少多个石块被同一个触发器连带触发，因为传感器固定在世界空间，石块下落和回收不会改变检测区域的位置，机关重复运行时更加稳定。"
+            },
+            {
+              "where": "end",
+              "text": "触发检测并没有直接放在石块本体上，而是为每一个石块创建了一个独立的FallingStoneTrapSensor，传感器是一个触发器Collider2D，只覆盖石块正下方一定的宽度范围，当玩家进入这个范围的时候调用对应的石块的Trigger方法；这样可以保证“谁检测到谁下落”，减少多个石块被同一个触发器连带触发，因为传感器固定在世界空间，石块下落和回收不会改变检测区域的位置，机关重复运行时更加稳定。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "182",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4.6 Boss战斗系统实现"
+            },
+            {
+              "where": "end",
+              "text": "4.6 Boss战斗系统实现"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "185",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "4.7 UI与音效系统实现"
+            },
+            {
+              "where": "end",
+              "text": "4.7 UI与音效系统实现"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "189",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文一级标题\"的段后磅数不符合要求，标准：1.0磅（折合0.1行）|实际：15.9磅（折合1.0行）；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "5 系统测试"
+            },
+            {
+              "where": "end",
+              "text": "5 系统测试"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "193",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "5.1 测试环境与测试方法"
+            },
+            {
+              "where": "end",
+              "text": "5.1 测试环境与测试方法"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "197",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "5.2 功能测试"
+            },
+            {
+              "where": "end",
+              "text": "5.2 功能测试"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "201",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "5.3 典型问题与优化"
+            },
+            {
+              "where": "end",
+              "text": "5.3 典型问题与优化"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "202",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文\"的(中文)字体名称不符合要求，标准：宋体|实际：Times New Roman",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "第十一条类问题演示用Demo的复杂度控制在合理范围内，随着功能的增加，项目中已经包含了玩家状态机、普通敌人、技能、机关、精英怪、Boss以及UI流程等，如果再加入背包、钥匙数量、存档、多场景切换等功能，短期内会增加大量的测试压力；因此目前版本只实现了击败敌人后解锁道路的设计意图，并且没有实现完整的钥匙系统，取舍是为了保持“击败敌人后解锁道路”的设计思路，同时减少由于一个演示节点而引入过多的系统。"
+            },
+            {
+              "where": "end",
+              "text": "第十一条类问题演示用Demo的复杂度控制在合理范围内，随着功能的增加，项目中已经包含了玩家状态机、普通敌人、技能、机关、精英怪、Boss以及UI流程等，如果再加入背包、钥匙数量、存档、多场景切换等功能，短期内会增加大量的测试压力；因此目前版本只实现了击败敌人后解锁道路的设计意图，并且没有实现完整的钥匙系统，取舍是为了保持“击败敌人后解锁道路”的设计思路，同时减少由于一个演示节点而引入过多的系统。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "203",
+      "author": "字体问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文\"的(中文)字体名称不符合要求，标准：宋体|实际：Times New Roman",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "第十一条类问题演示用Demo的复杂度控制在合理范围内，随着功能的增加，项目中已经包含了玩家状态机、普通敌人、技能、机关、精英怪、Boss以及UI流程等，如果再加入背包、钥匙数量、存档、多场景切换等功能，短期内会增加大量的测试压力；因此目前版本只实现了击败敌人后解锁道路的设计意图，并且没有实现完整的钥匙系统，取舍是为了保持“击败敌人后解锁道路”的设计思路，同时减少由于一个演示节点而引入过多的系统。"
+            },
+            {
+              "where": "end",
+              "text": "第十一条类问题演示用Demo的复杂度控制在合理范围内，随着功能的增加，项目中已经包含了玩家状态机、普通敌人、技能、机关、精英怪、Boss以及UI流程等，如果再加入背包、钥匙数量、存档、多场景切换等功能，短期内会增加大量的测试压力；因此目前版本只实现了击败敌人后解锁道路的设计意图，并且没有实现完整的钥匙系统，取舍是为了保持“击败敌人后解锁道路”的设计思路，同时减少由于一个演示节点而引入过多的系统。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "207",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"正文二级标题\"的段前磅数不符合要求，标准：0.5磅（折合0.0行）|实际：7.95磅（折合0.5行）；\n\"正文二级标题\"的对齐方式不符合要求，标准：两端对齐|实际：左对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "5.4 测试结果分析"
+            },
+            {
+              "where": "end",
+              "text": "5.4 测试结果分析"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "214",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"参考文献\"的首行缩进不符合要求，标准：0.0磅(0.0字符) |实际：-18.0磅(-1.7字符)；\n\"参考文献\"的对齐方式不符合要求，标准：左对齐|实际：两端对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "[1] Bhosale T, Kulkarni S, Patankar S N. 2D Platformer Game in Unity Engine[J]. International Research Journal of Engineering and Technology, 2018, 5(4): 3021-3024."
+            },
+            {
+              "where": "end",
+              "text": "[1] Bhosale T, Kulkarni S, Patankar S N. 2D Platformer Game in Unity Engine[J]. International Research Journal of Engineering and Technology, 2018, 5(4): 3021-3024."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "215",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"参考文献\"的首行缩进不符合要求，标准：0.0磅(0.0字符) |实际：-18.0磅(-1.7字符)；\n\"参考文献\"的对齐方式不符合要求，标准：左对齐|实际：两端对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "[2] Pichlmair M, Fasterholdt M, Holmgård C. You say jump, I say how high- Operationalising the game feel of jumping[C]//Proceedings of DiGRA/FDG. 2016."
+            },
+            {
+              "where": "end",
+              "text": "[2] Pichlmair M, Fasterholdt M, Holmgård C. You say jump, I say how high- Operationalising the game feel of jumping[C]//Proceedings of DiGRA/FDG. 2016."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "216",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"参考文献\"的首行缩进不符合要求，标准：0.0磅(0.0字符) |实际：-18.0磅(-1.7字符)；\n\"参考文献\"的对齐方式不符合要求，标准：左对齐|实际：两端对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "[3] Millington I. Artificial Intelligence for Games[M]. 3rd ed. Boca Raton: CRC Press, 2019."
+            },
+            {
+              "where": "end",
+              "text": "[3] Millington I. Artificial Intelligence for Games[M]. 3rd ed. Boca Raton: CRC Press, 2019."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "217",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"参考文献\"的首行缩进不符合要求，标准：0.0磅(0.0字符) |实际：-18.0磅(-1.7字符)；\n\"参考文献\"的对齐方式不符合要求，标准：左对齐|实际：两端对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "[4] Gregory J. 游戏引擎架构[M]. 叶劲峰, 等译. 北京: 电子工业出版社, 2014."
+            },
+            {
+              "where": "end",
+              "text": "[4] Gregory J. 游戏引擎架构[M]. 叶劲峰, 等译. 北京: 电子工业出版社, 2014."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "218",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"参考文献\"的首行缩进不符合要求，标准：0.0磅(0.0字符) |实际：-18.0磅(-1.7字符)；\n\"参考文献\"的对齐方式不符合要求，标准：左对齐|实际：两端对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "[5] Nystrom R. 游戏编程模式[M]. 侯金标, 译. 北京: 人民邮电出版社, 2015."
+            },
+            {
+              "where": "end",
+              "text": "[5] Nystrom R. 游戏编程模式[M]. 侯金标, 译. 北京: 人民邮电出版社, 2015."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "219",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"参考文献\"的首行缩进不符合要求，标准：0.0磅(0.0字符) |实际：-18.0磅(-1.7字符)；\n\"参考文献\"的对齐方式不符合要求，标准：左对齐|实际：两端对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "[6] Swink S. Game Feel: A Game Designer's Guide to Virtual Sensation[M]. Burlington: Morgan Kaufmann, 2008."
+            },
+            {
+              "where": "end",
+              "text": "[6] Swink S. Game Feel: A Game Designer's Guide to Virtual Sensation[M]. Burlington: Morgan Kaufmann, 2008."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "220",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"参考文献\"的首行缩进不符合要求，标准：0.0磅(0.0字符) |实际：-18.0磅(-1.7字符)；\n\"参考文献\"的对齐方式不符合要求，标准：左对齐|实际：两端对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "[7] Schell J. The Art of Game Design: A Book of Lenses[M]. 3rd ed. Boca Raton: CRC Press, 2019."
+            },
+            {
+              "where": "end",
+              "text": "[7] Schell J. The Art of Game Design: A Book of Lenses[M]. 3rd ed. Boca Raton: CRC Press, 2019."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "221",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"参考文献\"的首行缩进不符合要求，标准：0.0磅(0.0字符) |实际：-18.0磅(-1.7字符)；\n\"参考文献\"的对齐方式不符合要求，标准：左对齐|实际：两端对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "[8] Unity Technologies. Unity User Manual 2022.3 LTS[EB/OL]. [2026-05-13]. https://docs.unity3d.com/2022.3/Documentation/Manual/index.html."
+            },
+            {
+              "where": "end",
+              "text": "[8] Unity Technologies. Unity User Manual 2022.3 LTS[EB/OL]. [2026-05-13]. https://docs.unity3d.com/2022.3/Documentation/Manual/index.html."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "222",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"参考文献\"的首行缩进不符合要求，标准：0.0磅(0.0字符) |实际：-18.0磅(-1.7字符)；\n\"参考文献\"的对齐方式不符合要求，标准：左对齐|实际：两端对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "[9] Unity Technologies. Unity Scripting API 2022.3 LTS[EB/OL]. [2026-05-13]. https://docs.unity3d.com/2022.3/Documentation/ScriptReference/."
+            },
+            {
+              "where": "end",
+              "text": "[9] Unity Technologies. Unity Scripting API 2022.3 LTS[EB/OL]. [2026-05-13]. https://docs.unity3d.com/2022.3/Documentation/ScriptReference/."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "223",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"参考文献\"的首行缩进不符合要求，标准：0.0磅(0.0字符) |实际：-18.0磅(-1.7字符)；\n\"参考文献\"的对齐方式不符合要求，标准：左对齐|实际：两端对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "[10] Bourg D M, Seemann G. AI for Game Developers[M]. Sebastopol: O'Reilly Media, 2004."
+            },
+            {
+              "where": "end",
+              "text": "[10] Bourg D M, Seemann G. AI for Game Developers[M]. Sebastopol: O'Reilly Media, 2004."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "224",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"参考文献\"的首行缩进不符合要求，标准：0.0磅(0.0字符) |实际：-18.0磅(-1.7字符)；\n\"参考文献\"的对齐方式不符合要求，标准：左对齐|实际：两端对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "[11] Buckland M. Programming Game AI by Example[M]. Plano: Wordware Publishing, 2004."
+            },
+            {
+              "where": "end",
+              "text": "[11] Buckland M. Programming Game AI by Example[M]. Plano: Wordware Publishing, 2004."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "225",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"参考文献\"的首行缩进不符合要求，标准：0.0磅(0.0字符) |实际：-18.0磅(-1.7字符)；\n\"参考文献\"的对齐方式不符合要求，标准：左对齐|实际：两端对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "[12] Rabin S. Introduction to Game Development[M]. 2nd ed. Boston: Cengage Learning, 2010."
+            },
+            {
+              "where": "end",
+              "text": "[12] Rabin S. Introduction to Game Development[M]. 2nd ed. Boston: Cengage Learning, 2010."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "226",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"参考文献\"的首行缩进不符合要求，标准：0.0磅(0.0字符) |实际：-18.0磅(-1.7字符)；\n\"参考文献\"的对齐方式不符合要求，标准：左对齐|实际：两端对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "[13] Adams E. Fundamentals of Game Design[M]. 3rd ed. Berkeley: New Riders, 2014."
+            },
+            {
+              "where": "end",
+              "text": "[13] Adams E. Fundamentals of Game Design[M]. 3rd ed. Berkeley: New Riders, 2014."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "227",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"参考文献\"的首行缩进不符合要求，标准：0.0磅(0.0字符) |实际：-18.0磅(-1.7字符)；\n\"参考文献\"的对齐方式不符合要求，标准：左对齐|实际：两端对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "[14] Trefry G. Casual Game Design: Designing Play for the Gamer in All of Us[M]. Burlington: Morgan Kaufmann, 2010."
+            },
+            {
+              "where": "end",
+              "text": "[14] Trefry G. Casual Game Design: Designing Play for the Gamer in All of Us[M]. Burlington: Morgan Kaufmann, 2010."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "228",
+      "author": "段落问题\n",
+      "date": "2026-05-22T21:00:41Z",
+      "initials": null,
+      "resolved": false,
+      "text": "\"参考文献\"的首行缩进不符合要求，标准：0.0磅(0.0字符) |实际：-18.0磅(-1.7字符)；\n\"参考文献\"的对齐方式不符合要求，标准：左对齐|实际：两端对齐；",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "[15] Microsoft. C# documentation[EB/OL]. [2026-05-13]. https://learn.microsoft.com/dotnet/csharp/."
+            },
+            {
+              "where": "end",
+              "text": "[15] Microsoft. C# documentation[EB/OL]. [2026-05-13]. https://learn.microsoft.com/dotnet/csharp/."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

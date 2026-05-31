@@ -26,6 +26,14 @@ public class UI_BossClearMessage : MonoBehaviour
     [SerializeField] private Button startButton;
     [SerializeField] private Button startQuitButton;
 
+    [Header("Opening hint")]
+    [SerializeField] private TextMesh openingHintText;
+    [SerializeField] private string openingHintMessage = "A / D \u79fb\u52a8   Space \u8df3\u8dc3   Shift \u51b2\u523a\n\u5de6\u952e\u653b\u51fb   Q \u5f39\u53cd   \u53f3\u952e\u98de\u5251   R \u9ed1\u6d1e";
+    [SerializeField] private Vector3 openingHintWorldOffset = new Vector3(0, 5.2f, 0);
+    [SerializeField] private float openingHintCharacterSize = .1f;
+    [SerializeField] private float openingHintDuration = 20;
+    [SerializeField] private float openingHintFadeDuration = 1.2f;
+
     [Header("Pause / clear menu")]
     [SerializeField] private GameObject messageRoot;
     [SerializeField] private GameObject bossClearBackgroundRoot;
@@ -48,6 +56,7 @@ public class UI_BossClearMessage : MonoBehaviour
     private float playerDeathMenuTime = -1;
     private Coroutine bossClearCoroutine;
     private Coroutine playerDeathCoroutine;
+    private Coroutine openingHintCoroutine;
     private Font cachedFont;
 
     private void Awake()
@@ -157,6 +166,7 @@ public class UI_BossClearMessage : MonoBehaviour
         Transform canvasTransform = GetCanvasTransform();
 
         EnsureStartMenu(canvasTransform);
+        EnsureOpeningHint();
         EnsureBossClearBackground(canvasTransform);
         EnsurePauseMenu(canvasTransform);
 
@@ -165,6 +175,9 @@ public class UI_BossClearMessage : MonoBehaviour
 
         if (startMenuRoot != null && !gameStarted)
             startMenuRoot.SetActive(true);
+
+        if (openingHintText != null && !gameStarted)
+            openingHintText.gameObject.SetActive(false);
 
         if (messageRoot != null && !pauseMenuOpen && !bossDefeated && !playerDefeated)
             messageRoot.SetActive(false);
@@ -329,6 +342,42 @@ public class UI_BossClearMessage : MonoBehaviour
         resumeButton = EnsureButton(resumeButton, messageRoot.transform, "ResumeButton", new Vector2(0, 12), "\u7ee7\u7eed\u6e38\u620f", ResumeGame);
         restartButton = EnsureButton(restartButton, messageRoot.transform, "RestartButton", new Vector2(0, -42), "\u91cd\u65b0\u5f00\u59cb", RestartGame);
         quitButton = EnsureButton(quitButton, messageRoot.transform, "QuitButton", new Vector2(0, -96), "\u9000\u51fa\u6e38\u620f", QuitGame);
+    }
+
+    private void EnsureOpeningHint()
+    {
+        if (openingHintText == null)
+        {
+            GameObject existing = GameObject.Find("OpeningHint");
+            if (existing != null)
+                openingHintText = existing.GetComponent<TextMesh>();
+        }
+
+        if (openingHintText == null)
+        {
+            GameObject hintObject = new GameObject("OpeningHint");
+            openingHintText = hintObject.AddComponent<TextMesh>();
+        }
+
+        openingHintText.text = openingHintMessage;
+        openingHintText.font = GetDefaultFont();
+        openingHintText.fontSize = 48;
+        openingHintText.fontStyle = FontStyle.Bold;
+        openingHintText.anchor = TextAnchor.MiddleCenter;
+        openingHintText.alignment = TextAlignment.Center;
+        openingHintText.characterSize = openingHintCharacterSize;
+        openingHintText.color = new Color(1f, .95f, .78f, .92f);
+
+        MeshRenderer hintRenderer = openingHintText.GetComponent<MeshRenderer>();
+
+        if (hintRenderer != null)
+        {
+            if (openingHintText.font != null)
+                hintRenderer.sharedMaterial = openingHintText.font.material;
+
+            hintRenderer.sortingLayerName = "Background";
+            hintRenderer.sortingOrder = 20;
+        }
     }
 
     private void EnsureShade(Transform parent)
@@ -558,6 +607,8 @@ public class UI_BossClearMessage : MonoBehaviour
 
         if (messageRoot != null)
             messageRoot.SetActive(false);
+
+        HideOpeningHint();
     }
 
     public void StartGame()
@@ -575,6 +626,8 @@ public class UI_BossClearMessage : MonoBehaviour
 
         if (messageRoot != null)
             messageRoot.SetActive(false);
+
+        ShowOpeningHint();
     }
 
     private void ShowPauseMenu()
@@ -644,6 +697,8 @@ public class UI_BossClearMessage : MonoBehaviour
             messageRoot.SetActive(true);
             BringMessageLayerToFront();
         }
+
+        HideOpeningHint();
     }
 
     private void ShowPlayerDeathMenu()
@@ -670,6 +725,75 @@ public class UI_BossClearMessage : MonoBehaviour
             messageRoot.SetActive(true);
             BringMessageLayerToFront();
         }
+
+        HideOpeningHint();
+    }
+
+    private void ShowOpeningHint()
+    {
+        if (openingHintText == null)
+            return;
+
+        if (openingHintCoroutine != null)
+            StopCoroutine(openingHintCoroutine);
+
+        openingHintText.text = openingHintMessage;
+        PositionOpeningHint();
+        openingHintText.color = new Color(1f, .95f, .78f, .92f);
+        openingHintText.gameObject.SetActive(true);
+        openingHintCoroutine = StartCoroutine(HideOpeningHintAfterDelay());
+    }
+
+    private void PositionOpeningHint()
+    {
+        if (openingHintText == null)
+            return;
+
+        Player player = null;
+
+        if (PlayerManager.instance != null)
+            player = PlayerManager.instance.player;
+
+        if (player == null)
+            player = FindObjectOfType<Player>();
+
+        if (player != null)
+            openingHintText.transform.position = player.transform.position + openingHintWorldOffset;
+    }
+
+    private void HideOpeningHint()
+    {
+        if (openingHintCoroutine != null)
+        {
+            StopCoroutine(openingHintCoroutine);
+            openingHintCoroutine = null;
+        }
+
+        if (openingHintText != null)
+            openingHintText.gameObject.SetActive(false);
+    }
+
+    private IEnumerator HideOpeningHintAfterDelay()
+    {
+        yield return new WaitForSeconds(openingHintDuration);
+
+        if (openingHintText == null)
+            yield break;
+
+        Color hintColor = openingHintText.color;
+        float fadeDuration = Mathf.Max(.01f, openingHintFadeDuration);
+        float fadeTime = 0;
+
+        while (fadeTime < fadeDuration)
+        {
+            fadeTime += Time.deltaTime;
+            hintColor.a = Mathf.Lerp(.92f, 0, fadeTime / fadeDuration);
+            openingHintText.color = hintColor;
+            yield return null;
+        }
+
+        openingHintText.gameObject.SetActive(false);
+        openingHintCoroutine = null;
     }
 
     private void BringMessageLayerToFront()

@@ -28,7 +28,7 @@ public class PlayerGroundState : PlayerState
         if (player.IsActionInputBlocked())
             return;
 
-        if (Input.GetKeyDown(KeyCode.R) && SkillManager.instance.blackhole != null)
+        if (Input.GetKeyDown(KeyCode.R) && SkillManager.instance.blackhole != null && SkillManager.instance.blackhole.IsReady())
         {
             stateMachine.ChangeState(player.blackholeState);
             return;
@@ -38,7 +38,8 @@ public class PlayerGroundState : PlayerState
         {
             if (player.sword == null)
             {
-                stateMachine.ChangeState(player.aimSwordState);
+                if (SkillManager.instance.sword != null && SkillManager.instance.sword.IsReady())
+                    stateMachine.ChangeState(player.aimSwordState);
             }
             else
             {

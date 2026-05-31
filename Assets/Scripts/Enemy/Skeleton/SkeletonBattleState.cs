@@ -23,12 +23,20 @@ public class SkeletonBattleState : EnemyState
         base.Update();
 
         RaycastHit2D playerDetected = enemy.IsPlayerDetected();
+        bool playerIsClose = player != null && enemy.CanKeepBattleWith(player.position);
 
-        if(playerDetected)
+        if(playerDetected || playerIsClose)
         {
             RefreshBattleTime(player.position);
 
-            if(playerDetected.distance < enemy.attackDistance)
+            if (playerIsClose)
+                enemy.FlipController(player.position.x - enemy.transform.position.x);
+
+            float playerDistance = playerDetected
+                ? playerDetected.distance
+                : Vector2.Distance(player.position, enemy.transform.position);
+
+            if(playerDistance < enemy.attackDistance)
             {
                 if(CanAttack())
                 {
@@ -80,7 +88,7 @@ public class SkeletonBattleState : EnemyState
     public void RefreshBattleTime(Vector2 targetPosition)
     {
         stateTimer = enemy.battleTime;
-        lastKnownPlayerPosition = targetPosition;
+        lastKnownPlayerPosition = enemy.ClampPositionToLeash(targetPosition);
     }
 
     private bool CanAttack()

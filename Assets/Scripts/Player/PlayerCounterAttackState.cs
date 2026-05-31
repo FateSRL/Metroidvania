@@ -28,6 +28,8 @@ public class PlayerCounterAttackState : PlayerState
                 if(hit.GetComponent<Enemy>().CanBeStunned()){
                     stateTimer=10;
                     player.anim.SetBool("SuccessfulCounterAttack",true);
+                    DamageCounteredEnemy(hit.GetComponent<Enemy>());
+                    break;
                 }
             }
         }
@@ -40,5 +42,14 @@ public class PlayerCounterAttackState : PlayerState
     public override void Exit()
     {
         base.Exit();
+    }
+
+    private void DamageCounteredEnemy(Enemy enemy)
+    {
+        if (enemy == null)
+            return;
+
+        int normalAttackDamage = player.stats != null ? player.stats.GetDamage() : 1;
+        enemy.Damage(player.transform.position, Mathf.Max(1, normalAttackDamage * 2));
     }
 }
